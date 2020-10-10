@@ -285,7 +285,7 @@ span.line:after {
     background-size: cover;
     color: #fff;
     display: table;
-    height: 100%;
+    height: 80%;
     position: relative;
     text-align: center;
     width: 100%
@@ -294,7 +294,6 @@ span.line:after {
 .prize-sponsors {
     width: 60%;
 }
-
 
 
 .intro .intro-body {
