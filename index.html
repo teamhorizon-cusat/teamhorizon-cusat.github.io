@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Horizon">
+    <meta name="author" content="Horizon">
+    <title>Horizon Mars Rover Team, CUSAT</title>
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+     <link rel="icon" href="assets/img/horizon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+function jump(h){
+    var url = location.href;               //Save down the URL without hash.
+    location.href = "#"+h;                 //Go to the target element.
+    history.replaceState(null,null,url);
+    window.scrollTo(0, url,smooth);   //Don't like hashes. Changing it back.
+}
+</script>
+<body id="page-top"  data-target=".navbar-fixed-top" onload="myFunction()">
+  
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="myDiv" style="overflow-x: hidden;">
+                <div class="container" >
+                    <div class="navbar-header">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    		<i class="fa fa-bars"></i>
+                    	</button> 
+                    	<a class="navbar-brand page-scroll" href="#page-top">
+                    		<img alt="HackStudio Logo" src="assets/img/horizon.png" width="60">
+                    	</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a class="page-scroll" 	onclick="jump('description');">About</a></li>
+                            <li><a class="page-scroll"  onclick="jump('faq');">FAQ</a></li>
+                            <li><a class="page-scroll"  href="team.html">Team</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <header class="intro">
+        <!-- this is for the banner -->
+    </header>
+    <section id="description" class="text-center" style="">
+        <div class="container">
+            <div class="row align-items-center">
+            <!-- About Content -->
+                <div class="col-12 col-md-6 order-2 order-lg-1">
+                    <div class="about-content-text mb-80">
+                        <h1 class="wow fadeInUp" data-wow-delay="300ms">What is <span style="color: #fb8e00;">Team Horizon</span>?</h1>
+                        <p class="wow fadeInUp" data-wow-delay="300ms" >We're a group of UG students from multiple streams of <a href="http://cusat.ac.in">CUSAT</a> with primary goal to participate in <a href = "http://urc.marssociety.org/home/about-urc">URC</a> (University Rover Challenge).<br></p>
+                    </div>
+           </div>
+           <div class="col-6 col-md-6 order-1 order-lg-2">
+                <div class="about-thumb mb-80 wow fadeInUp" style= "" data-wow-delay="300ms">
+                    <img src="assets/img/horizon.png" style="" alt="Team Horizon Logo" id="abt_hs">
+                </div>
+            </div>
+        </div> 
+       
+            </div></section>
+
+            
+    <section id="about" class="cta text-center">
+            <div class="container">
+                <div class="row align-items-center">
+                <!-- About Content -->
+                    <div class="col-12 col-md-6 order-2 order-lg-1">
+                        <div class="about-content-text mb-80">
+                            <h1 class="wow fadeInUp" data-wow-delay="300ms">THE <span style="color: #fb8e00;">Institution</span></h1>
+                            <p class="wow fadeInUp" data-wow-delay="300ms" >Team Horizon represents CUSAT in URC. Cochin University of Science and Technology (CUSAT) occupies a unique place on the
+                                academic road map of Asia as a premier institution for higher education. The
+                                University’s motto ‘Tejasswinavadhitamasthu’ meaning ‘may thewisdom accrued deify
+                                us both - the teacher and the taught and percolateto the universe in its totality.
+                                The pursuit of excellence through these programmes
+                                has given CUSAT national and international acclaim.</p><br>
+                                <a href="https://cusat.ac.in/">Know More!</a>
+                    </div>
+               </div>
+               <div class="col-6 col-md-6 order-1 order-lg-2">
+                    <div class="about-thumb mb-80 wow fadeInUp" style= "margin-left:30%;" data-wow-delay="300ms">
+                        <img src="assets/img/cusat_1.png" style="" alt="CUSAT Logo" id="abt_cusat">
+                    </div>
+                </div>
+            </div> 
+           
+                </div>
+    </section>
+                <!-- <section id="about" class="cta text-center">
+
+                <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 order-2 order-lg-1">
+                                <div class="about-content-text mb-80">
+                                    <h1 class="wow fadeInUp" data-wow-delay="300ms">ECOSYSTEM <span style="color: #fb8e00;">PARTNER</span></h1>
+                                    <p class="wow fadeInUp" data-wow-delay="300ms" >Kerala Startup Mission (KSUM) is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.A startup accelerator in Kerala, to promote technology-based entrepreneurship activities, and to create the infrastructure and environment required to support high-technology-based businesses.</p>
+                                    <br>                                <a href="https://startupmission.kerala.gov.in/">Know More!</a>
+
+                                </div>
+                       </div>
+                       <div class="col-6 col-md-6 order-1 order-lg-2">
+                            <div class="about-thumb mb-80 wow fadeInUp" style= "margin-left:30%;" data-wow-delay="300ms">
+                                <img src="assets/img/ksum.png" style="" alt="HackVerse Logo" id="abt_ksum">
+                            </div>
+                        </div>
+                    </div> 
+                   
+                        </div>      
+      
+        </section> -->
+    
+    <section id="faq" class="text-center">
+        <a name="faq"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Frequently Asked Questions <span class="line"></span></h2>
+
+                    <div class="row">
+
+        
+                        <div class="col-lg-6">
+
+                            <dt>What is Team Horizon?</dt>
+
+                            <dd>We're a group of UG students from multiple streams of <a href="http://cusat.ac.in">CUSAT</a> with primary goal to participate in <a href = "http://urc.marssociety.org/home/about-urc">URC</a> (University Rover Challenge).</dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>Can I join the Horizon Team?</dt>
+
+                            <dd>If you're a student of <a href="http://cusat.ac.in">CUSAT</a> and have a knack for problem solving and real word implementations in the feilds of Electronics, Software Engineering and Mechanical Engineering, please do!</dd>
+
+                        </div>
+
+                        <br />
+
+                       
+
+                        <div class="col-lg-6">
+
+                            <dt>How to join Team Horizon?</dt>
+
+                            <dd>You can send us a DM on our <a href="https://www.linkedin.com/company/horizon-mars-rover-team/">LinkedIn</a> page and we'll get to you asap.
+                            </dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>I am a beginner to technology, Can I join Horizon?</dt>
+
+                            <dd>fillers</dd>
+
+                        </div>
+
+                        <br />
+
+                       
+
+                        <div class="col-lg-6">
+
+                            <br><dt>Can I join without an engineering background?</dt>
+
+                            <dd>Absolutely. There are a lot of position that require managerial and leadership qualities. So even if you don't have an engineering background, you're welcome to apply!</dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>How do I contact you?</dt>
+
+                            <dd>As of now, just send us a DM on our  <a href="https://www.linkedin.com/company/horizon-mars-rover-team/">LinkedIn</a> page. We're very responsive!</span></a></dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <br><dt>What are the perks of participating?</dt>
+
+                            <dd>If we win, we stand a chance to go to Mars Desert Research Station (MDRS) in Utah, USA.</dd>
+
+                        </div>
+
+                        <br /><br>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>       
+    <footer class="text-center">
+        <center>
+        <div class="container">
+            <div class="quotes">
+                <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                    // Print a random quote
+                    var quotes = [
+                        "<h3>&ldquo;Don't tell me the sky is the limit when there are footprints on the moon!&rdquo;</h3><center><p>&mdash; Paul Brandt</p><center>",
+                        "<h3>&ldquo;Keep your eyes on the stars, and your feet on the ground.&rdquo;</h3><center><p>&mdash; Theodore Roosevelt</p></center>",
+                        "<h3>&ldquo;Act as if what you do makes a difference. It does.&rdquo;</h3><center><p>&mdash; William James</p></center>"
+                    ];
+                    var item = quotes[Math.floor(Math.random() * quotes.length)];
+                    document.write(item);
+                </script>
+            </div>
+
+            <p class="copy">Built at the <a target="_blank" href="http://www.cusat.ac.in/">Cochin University of Science and Technology</a>
+                by<br><a href="http:www.shammianand.live/" target="_blank">Shammi Anand    </a>.</p>
+            <ul class="social">
+                <li><a href="https://www.linkedin.com/company/horizon-mars-rover-team/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <!-- <li><a href="https://twitter.com/thehackstudio" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+            </ul>
+        </div></center>
+        <!-- <center><a href="https://devfolio.co/code-of-conduct">Code of Conduct</a></center> -->
+    </footer>
+    <script src="code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+
+
+</html>
+
