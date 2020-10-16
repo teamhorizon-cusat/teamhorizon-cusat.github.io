@@ -1211,8 +1211,11 @@ main {
             transform: scale(1.5);
         }
         .flex-direction{
-        flex-direction:column;
-    }
+            flex-direction:column;
+        }
+        .announce{
+            
+        }
 }
 
 
