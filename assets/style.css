@@ -1,7 +1,7 @@
 
 
 *{
-  
+
     margin:0;
     padding:0;
 }
@@ -10,7 +10,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    height: 100%;
+    height:100%;
     letter-spacing: .5px;
     width: 100%;
 }
@@ -55,7 +55,7 @@ p {
 
 a {
     color: #fb8e00;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -67,6 +67,27 @@ section {
     padding-bottom: 70px;
     padding-top: 70px;
     width: 100%
+}
+
+@media (max-width: 768px){
+    .img-logo {
+       max-height: 300px;
+       
+       margin-right:40px;
+       margin-left:2%;
+       margin-bottom: 20px;;
+    }
+    .aboutteam{
+        text-align: center;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 768px){
+    .cusat-logo {
+       align-self: center;
+       margin-left: 15px;
+       margin-bottom: 30px;
+    }
 }
 
 table {
@@ -162,7 +183,13 @@ span.line:after {
     }
     #abt_hs{
         width: 65%;
-        margin-left: 40%;
+        margin-left: 25%;
+        padding-bottom: 10%;
+    }
+    #abt-cusat{
+        width: 65%;
+        margin-left: 25%;
+        padding-bottom: 10%;
     }
 }
 
@@ -188,7 +215,7 @@ span.line:after {
 }
 
 .navbar-custom .navbar-brand img {
-    /*display: none;*/
+
     margin-top: -20px
 }
 
@@ -201,7 +228,9 @@ span.line:after {
     font-size: 16px;
     padding: 4px 6px
 }
-
+.navbar-toggler-icon{
+  color: #fff;
+}
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0
 }
@@ -288,7 +317,7 @@ span.line:after {
 
 .intro {
     background-color: #fff;
-    background-image: url("img/rover4-min.jpg");
+    background-image: url("img/rover4.jpg");
     background-size: cover;
     color: #fff;
     display: table;
@@ -542,6 +571,165 @@ h3.prize {
     opacity: .75
 }
 
+.img-fluid{
+    width: 275px;
+    height: 275px;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px){
+    .gallery{
+        display: none;
+    }
+    .img-fluid {
+       align-self: center;
+       margin-left: 46px;
+       margin-bottom: 3px;
+
+    }
+}
+#video-play{
+    position: relative ;
+    min-height: 200px;
+    
+    background-attachment: fixed;
+    background-repeat: none;
+    text-align: center;
+    background-position: 0,-300px;
+    color: #fff;
+  }
+  #video-play a{
+    color: #fff;
+  }
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+  color: #ee9a14;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  color: #ee9a14;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #fb8e00;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 275px;
+  height: 275px;
+  margin-left:72px;
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+     align-items: center; 
+      display: none;   
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    #quote-carousel{
+        display: block;
+    }
+    #quote-carousel .carousel-indicators {
+        bottom: -10px !important; 
+        color: #fb8e00; 
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .carousel-image {
+        
+    }
+}
+@media (min-width: 768px) {
+    #showcase{
+      ;
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    #showcase{
+        align-items: center;
+        display: block;
+    }
+}
+
+
 .team {
     padding: 3.5em 0
 }
@@ -549,12 +737,12 @@ h3.prize {
 .team .row {
     border-bottom: solid 1px transparent;
     margin-left: -12px
-    
+
 }
 
 .team .row>* {
     float: left
-    
+
 
 }
 
@@ -563,16 +751,19 @@ h3.prize {
 }
 
 .teamMember img {
-    border-radius: 0.5em
+    border-radius: 0.5em;
+
 }
 
 .teamMember {
+    border: 2px;
+    border-color: #fb8e00;
     margin-bottom: 1em;
     margin-right: 1em;
     margin-left: 1em;
     flex-basis: 25%;
-    
-        
+
+
 
 }
 
@@ -636,6 +827,32 @@ h3.faq {
     margin-bottom: 5px;
     text-align: left
 }
+
+ @media (max-width:768px){
+    #FAQ{
+    
+    padding-left:5%;
+    }
+ }
+
+
+#FAQ .card{
+  border: #444;
+
+}
+#FAQ a{
+  color: #ee9a14;
+  text-decoration: none;
+}
+
+#FAQ .card-body {
+    position: relative;
+    padding-bottom: 8px;
+}
+#FAQ .card-header{
+  margin-bottom: -5px;;
+}
+
 h2.hack11
 {
 text-align : center;
@@ -714,7 +931,7 @@ img #abt_hs{
     display: flex;
     justify-content: center;
     transform: translateX();
-    align-items: center; 
+    align-items: center;
 }
 
 #spon_row{
@@ -757,10 +974,10 @@ img #abt_hs{
     }
 
     body{
-     overflow-x: hidden;   
+     overflow-x: hidden;
     }
 
-    
+
     #abt_cusat{
         transform: translate(-35%,10%);
     }
@@ -777,7 +994,7 @@ img #abt_hs{
     #partner{
         display: flex;
         justify-content: center;
-        transform: translateX(-5%); 
+        transform: translateX(-5%);
     }
 
     #loader-wrapper{
@@ -860,7 +1077,7 @@ dt{
     font-family: DINWeb, sans-serif!important;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
@@ -868,7 +1085,7 @@ dt{
     height: 150px;
     width: 200px;
     visibility: visible;
-    opacity: 1; 
+    opacity: 1;
 }
 
 #track_head{
@@ -882,7 +1099,7 @@ dt{
 }
 
 #tracks{
-    margin-bottom:-10%; 
+    margin-bottom:-10%;
     position:relative;
     top:-10%;
     padding-top: 0;
@@ -899,7 +1116,7 @@ main {
     align-items: center;
     background: #090707;
   }
-  
+
   .dank-ass-loader {
     display: flex;
     flex-direction: column;
@@ -908,7 +1125,7 @@ main {
   .dank-ass-loader .row {
     display: flex;
   }
-  
+
   .arrow {
     width: 0;
     height: 0;
@@ -1021,7 +1238,7 @@ main {
     -webkit-animation-delay: -1s;
             animation-delay: -1s;
   }
-  
+
   @-webkit-keyframes blink {
     0% {
       opacity: 0.1;
@@ -1033,7 +1250,7 @@ main {
       opacity: 0.1;
     }
   }
-  
+
   @keyframes blink {
     0% {
       opacity: 0.1;
@@ -1045,7 +1262,7 @@ main {
       opacity: 0.1;
     }
   }
-  
+
 
   @media screen and (max-width: 1025px) and (min-width: 786px){
     #banner{
@@ -1068,9 +1285,9 @@ main {
         max-width: 100%;
         overflow-x: hidden;
     }
- 
-    
-    }    
+
+
+    }
 
 .cusat-prize-sponsors{
     transform: scale(0.5,0.5);
@@ -1102,31 +1319,31 @@ main {
 }
 
 @media screen and (max-width: 600px){
-    
+
     .already-big-sponsors{
         transform: scale(3,3);
     }
 
     .prize-sponsors{
         transform: scale(3,3);    }
-        
+
     .cusat-prize-sponsors{
             transform: scale(1.5,1.5);    }
 
     .special-size{
         transform: scale(3,3);    }
-    
+
     .big-sponsors{
         transform: scale(3,3);
     }
 
     .dsc-special-size{
     transform: scale(2,2);    }
-    
+
     .matic-logo{
         transform: scale(2,2);
     }
-            
+
     #sponsor_block{
         display: inline-block;
         align-items:center;
@@ -1137,7 +1354,7 @@ main {
     #partner_row{
         display: inline-block;
         align-items:center;
-        justify-content: center; 
+        justify-content: center;
         transform: translateX(0%);
         margin-top:0%;
     }
@@ -1145,7 +1362,7 @@ main {
     #community_row{
         display: inline-block;
         align-items:center;
-        justify-content: center;  
+        justify-content: center;
     }
 
     #sponsor_block div{
@@ -1159,7 +1376,7 @@ main {
     #community_row div{
         padding-bottom: 20%;
     }
-    
+
 }
 
 .why-row{
@@ -1211,11 +1428,8 @@ main {
             transform: scale(1.5);
         }
         .flex-direction{
-            flex-direction:column;
-        }
-        .announce{
-            
-        }
+        flex-direction:column;
+    }
 }
 
 
@@ -1247,10 +1461,10 @@ main {
   clear: both;
 }
 
-/* Style the counter cards */
+/* Style the counter cards
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  /* padding: 16px;
   text-align: center;
   background: rgba(37, 36,41, 0.7);
   height: 450px;
@@ -1261,36 +1475,36 @@ main {
 
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  /* padding: 16px;
   text-align: center;
   background: rgba(239, 199,0, 0.3);
   height: 200px;
   border-radius: 25px;
-  overflow:auto;
+  overflow:auto; */
 
 }
 
-.card2:hover {
+/* .card2:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  background: rgba(239, 199,0, 0.2);
   height: 200px;
   border-radius: 25px;
-  overflow:auto;
+  overflow:auto; */
 }
 
-.card3 {
+/* .card3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  /* padding: 16px;
 
   text-align: center;
   background: rgba(255, 38,38, 0.3);
   height: 200px;
   border-radius: 25px;
-  overflow:auto;
+  overflow:auto; */
 
 }
 
-.card3:hover {
+/* .card3:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background: rgba(255, 38,38, 0.2);
   height: 200px;
@@ -1304,7 +1518,7 @@ main {
   height: 450px;
   border-radius: 25px;
   overflow:auto;
-}
+}   */
 .anim {
     opacity: 0;
     -webkit-transform: translateY(60px);
