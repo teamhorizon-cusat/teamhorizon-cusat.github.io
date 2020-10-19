@@ -602,6 +602,10 @@ h3.prize {
     color: #fff;
   }
 
+  .video{
+      padding-bottom: 5px;
+  }
+
 /* carousel */
 #quote-carousel 
 {
