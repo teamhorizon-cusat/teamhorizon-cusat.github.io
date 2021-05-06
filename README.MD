@@ -1,2 +1,0 @@
-# horizon
-[https://teamhorizon.live]
