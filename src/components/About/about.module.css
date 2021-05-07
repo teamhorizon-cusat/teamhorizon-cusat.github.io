@@ -1,0 +1,25 @@
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 100px;
+    max-width: 60%;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.content {
+    padding: 5%;
+    margin-left: 70px;
+    text-align: justify;
+}
+
+.logo {
+    width: 250px;
+    margin: 5%;
+}
+
+.head {
+    margin-bottom: 20px;
+}

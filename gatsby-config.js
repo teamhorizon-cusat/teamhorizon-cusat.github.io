@@ -12,5 +12,6 @@ module.exports = {
         icon: `src/assets/icon.png`,
       },
     },
+    `gatsby-plugin-smoothscroll`
   ],
 };
