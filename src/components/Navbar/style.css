@@ -1,0 +1,33 @@
+nav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  background-color: #e2e2e2;
+  z-index: 10;
+}
+
+nav a {
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+nav a:hover {
+  border-color: black;
+}
+
+nav > div > button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+nav > div > button:hover {
+  border-color: black;
+}
