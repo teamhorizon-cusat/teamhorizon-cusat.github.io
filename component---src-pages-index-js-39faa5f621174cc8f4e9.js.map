@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://team-horizon/./src/pages/index.js"],"names":["Index"],"mappings":"4KAEe,SAASA,IACtB,OACE","file":"component---src-pages-index-js-39faa5f621174cc8f4e9.js","sourcesContent":["import React from 'react'\n\nexport default function Index() {\n  return (\n    <div>\n      WEBSITE UNDER DEVELOPMENT\n    </div>\n  )\n}\n"],"sourceRoot":""}
