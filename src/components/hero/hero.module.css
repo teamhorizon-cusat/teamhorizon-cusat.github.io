@@ -1,0 +1,19 @@
+.header{
+    padding-top: 120px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto
+}
+
+.header h2 {
+    font-size: 6em;
+}
+
+.header h3 {
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}

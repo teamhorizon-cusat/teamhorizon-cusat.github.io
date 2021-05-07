@@ -13,6 +13,7 @@ export default function Navbar() {
           <a href="https://youtu.be/yEy-2Nw_Bh4" target="_blank" rel="noopener noreferrer">
             Promo
           </a>
+          <button onClick={() => scrollTo('#contact-us')}>Contact Us</button>
         </div>
       </nav>
   );
