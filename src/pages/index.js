@@ -4,6 +4,7 @@ import About from '../components/About/About'
 import Footer from '../components/Footer/Footer'
 import Timeline from '../components/Timeline/Timeline'
 import Hero from '../components/Hero/Hero'
+import Team from '../components/Team/Team'
 import '../styles/global.css'
 
 export default function Index() {
@@ -13,6 +14,7 @@ export default function Index() {
       <Hero />
       <About />
       <Timeline />
+      <Team />
       <Footer />
     </div>
   )
