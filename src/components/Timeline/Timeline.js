@@ -4,7 +4,7 @@ import "./style.css";
 export default function Timeline() {
   return (
     <div className="timelineContent" id="timeline">
-      <h1>Timeline</h1>
+      <h1>Milestones</h1>
       <ul className="timeline">
         <li className="event" data-date="JAN 2020">
           <h3>Qualified URC 2020 PDR</h3>
@@ -19,7 +19,7 @@ export default function Timeline() {
         <li className="event" id="date" data-date="JAN 2021">
           <h3>Qualified URC 2021 PDR</h3>
           <p>
-            Qualified PDR among top 88 teams and only team from keral to do so
+            Qualified PDR among top 88 teams and only team from kerala to do so
             for two consecutive years
           </p>
         </li>

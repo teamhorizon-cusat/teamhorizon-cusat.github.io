@@ -17,13 +17,13 @@ export default function Card(props) {
               <FontAwesomeIcon icon={faEnvelope} title="email" />
               <span>{props.email}</span>
               <br />
-              {props.linkedin != "" ? (
+              {props.linkedin !== "" ? (
                 <div>
                   <FontAwesomeIcon icon={faLinkedin} title="LinkedIn" />
                   <span>
                     <a
                       href={"https://www.linkedin.com/" + props.linkedin}
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       {props.linkedin}
                     </a>

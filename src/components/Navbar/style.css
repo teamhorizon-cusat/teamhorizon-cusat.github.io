@@ -1,4 +1,4 @@
-nav {
+.navbar {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
@@ -6,28 +6,78 @@ nav {
   width: 100%;
   align-items: center;
   position: fixed;
-  background-color: #e2e2e2;
+  transition: background-color 0.5s ease;
+  background-color:transparent;
+  color:white;
   z-index: 10;
 }
-
-nav a {
-  padding: 10px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
+.navscroll{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  transition: background-color 0.5s ease;
+  background-color: #050554;
+  color:white;
+  z-index: 10;
 }
-
-nav a:hover {
-  border-color: black;
+#check{
+  display: none;
 }
-
-nav > div > button {
-  border: none;
-  background-color: transparent;
-  font-size: 1.1em;
-  padding: 10px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
+@media screen and (max-width:640px){
+  nav > div >button{
+    display: none;
+  }
+  .dropDown{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #050554;
+    top: 10vh;
+    right:-50%;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .dropbtn{
+    display: block;
+  }
+  .hamburger button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    font-size: 1.1em;
+    padding: 12px 16px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color:white;
+  }
+  .hamburger button:hover{
+    border-color: white;
+  }
+  .hamburger:hover .dropDown{
+    transition: all 0.5s ease;
+    right:0px;
+  }  
 }
-nav > div > button:hover {
-  border-color: black;
+@media screen and (min-width:640px){
+  nav > div > button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color:white;
+  }
+  nav > div > button:hover {
+    border-color: white;
+  }
+  .hamburger{
+    display: none;
+  }
 }
