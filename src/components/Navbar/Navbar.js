@@ -6,14 +6,16 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [colorChange, setColorchange] = useState(false);
+  const isBrowser = typeof window !== "undefined";
   const changeNavColor = () => {
-    if (window.scrollY > 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
+    if (isBrowser) {
+      if (window.scrollY > 80) {
+        setColorchange(true);
+      } else {
+        setColorchange(false);
+      }
     }
   };
-  const isBrowser = typeof window !== "undefined";
   if (isBrowser) {
     window.addEventListener("scroll", changeNavColor);
   }
