@@ -8,44 +8,81 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {contactus,social,lastsection,copyright,colorL,colorF} from "./footer.module.css";
+import {
+  contactus,
+  social,
+  lastsection,
+  copyright,
+  colorL,
+  colorF,
+} from "./footer.module.css";
 
 export default function Footer() {
-   let share, connect,post,watch;
-    if(window.innerWidth>500){
-      share =" share!";
-      connect=" connect";
-      post=" post";
-      watch=" watch";
-    }
-  
+  let share, connect, post, watch;
+  if (true) {
+    share = " share!";
+    connect = " connect";
+    post = " post";
+    watch = " watch";
+  }
+
   return (
     <footer id="contact-us">
       <div className={contactus}>
-        <div className={social} >
-          <Link to="https://www.facebook.com/teamhorizoncusat/" target="_blank" className={colorL}>
-            <FontAwesomeIcon icon={faFacebook} title="facebook" className={colorF}/>{share}
+        <div className={social}>
+          <Link
+            to="https://www.facebook.com/teamhorizoncusat/"
+            target="_blank"
+            className={colorL}
+          >
+            <FontAwesomeIcon
+              icon={faFacebook}
+              title="facebook"
+              className={colorF}
+            />
+            {share}
           </Link>
         </div>
         <div className={social}>
           <Link
             to="https://www.instagram.com/teamhorizoncusat/"
-            target="_blank" className={colorL}
+            target="_blank"
+            className={colorL}
           >
-            <FontAwesomeIcon icon={faInstagram} title="Instagram"  className={colorL}/>{post}
+            <FontAwesomeIcon
+              icon={faInstagram}
+              title="Instagram"
+              className={colorL}
+            />
+            {post}
           </Link>
         </div>
         <div className={social}>
           <Link
             to="https://www.linkedin.com/company/horizon-mars-rover-team/"
-            target="_blank" className={colorL}
+            target="_blank"
+            className={colorL}
           >
-            <FontAwesomeIcon icon={faLinkedin} title="LinkedIn"  className={colorL}/> {connect}
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              title="LinkedIn"
+              className={colorL}
+            />{" "}
+            {connect}
           </Link>
         </div>
         <div className={social}>
-          <Link to="https://youtu.be/yEy-2Nw_Bh4" target="_blank" className={colorL}>
-            <FontAwesomeIcon icon={faYoutube} title="youtube" className={colorL} /> {watch}
+          <Link
+            to="https://youtu.be/yEy-2Nw_Bh4"
+            target="_blank"
+            className={colorL}
+          >
+            <FontAwesomeIcon
+              icon={faYoutube}
+              title="youtube"
+              className={colorL}
+            />{" "}
+            {watch}
           </Link>
         </div>
       </div>
