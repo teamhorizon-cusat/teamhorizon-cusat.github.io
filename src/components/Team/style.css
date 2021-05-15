@@ -54,3 +54,6 @@
 .detailsLinks {
   margin-top: 10px;
 }
+.detailsLinks a{
+  color:black;
+}

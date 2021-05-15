@@ -6,7 +6,8 @@ export default function Hero() {
     return (
         <section className={header}>
             <div>
-              <h2>Building next</h2>
+              <h2>Building </h2>
+              <h2>next</h2>
               <h3>Gen Rover</h3>
               <p>By team horizon</p>
             </div>
