@@ -1,5 +1,21 @@
 import React from "react"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/global.css';
+import NavBar from '../components/Navbar/NavBar';
+import Hero from '../components/Hero/Hero';
+import About from '../components/About/About';
+import Milestone from "../components/Milestone/Milestone";
+import Team from "../components/Team/Team";
+import Footer from "../components/Footer/Footer";
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <div>
+      <NavBar/>
+      <Hero />
+      <About />
+      <Milestone />
+      <Team />
+     <Footer />
+    </div>
+  )
 }

@@ -1,0 +1,673 @@
+@keyframes slide-in-left {
+    0% {
+              transform: translateX(-1000px);
+               opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+              transform: scale(0);
+              opacity: 1;
+    }
+    100% {
+              transform: scale(1);
+               opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+              transform: rotateX(-100deg);
+              transform-origin: top;
+              opacity: 0;
+    }
+    100% {
+              transform: rotateX(0deg);
+              transform-origin: top;
+              opacity: 1;
+    }
+  }
+#team-img{
+    max-width:250px;
+}
+#team-img-work{
+    margin-left: auto;
+    margin-right: auto;
+}
+#team-main-head{
+    font-weight: 900;
+    color:#db1d4b;
+}
+#team-main-head-animate{
+    font-weight: 900;
+    color:#db1d4b;
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#team-p-animate{
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+h4{
+    font-weight: 700;
+    color:#263238;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+a{
+    color:#db1d4b;
+    margin-left: 10px;
+}
+a:hover{
+    text-decoration: none;
+    color:#db1d4b;
+}
+#team-nick{
+    text-align: center;
+    font-size: 11px;
+}
+
+#team-base-img{
+    max-width: 280px;
+}
+#team-base-img-animate{
+    max-width: 280px;
+    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+ @media screen and (max-width:375px){
+    #image-container1{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container1-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container2{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container2-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container3{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container3-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container4{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container4-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container5{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container5-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container6{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container6-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container7{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container7-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container8{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container8-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }  
+ }
+ @media screen and (min-width:376px) and (max-width:767px){
+    #image-container1{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container1-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container2{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container2-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container3{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container3-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container4{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container4-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container5{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container5-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container6{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container6-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container7{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container7-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container8{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container8-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }  
+
+ }
+@media screen and (min-width:768px) and (max-width:991px){
+   
+    #image-container1{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+    }
+    #image-container1-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container2{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container2-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container3{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+    }
+    #image-container3-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container4{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container4-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container5{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+    }
+    #image-container5-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container6{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container6-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container7{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+    }
+    #image-container7-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container8{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container8-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }  
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+ 
+    #image-container1{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+    }
+    #image-container1-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container2{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container2-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container3{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+    }
+    #image-container3-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container4{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container4-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container5{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+    }
+    #image-container5-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container6{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container6-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container7{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+    }
+    #image-container7-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container8{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+    }
+    #image-container8-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:400px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+}
+@media screen and (min-width:1200px){
+    #image-container1{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+    }
+    #image-container1-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container2{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+    }
+    #image-container2-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container3{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+    }
+    #image-container3-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container4{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+    }
+    #image-container4-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container5{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+    }
+    #image-container5-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container6{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+    }
+    #image-container6-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    #image-container7{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+    }
+    #image-container7-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+    #image-container8{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+    }
+    #image-container8-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:600px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
+    
+}

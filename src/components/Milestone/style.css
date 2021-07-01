@@ -1,0 +1,238 @@
+@keyframes fade-in-right {
+    0% {
+              transform: translateX(50px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+              transform: translateX(-50px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+              transform: translateZ(-80px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateZ(0);
+              opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+#stair{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+}
+#stair-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#chara{ 
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+}
+#chara-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+  animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#sand{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+}
+#sand-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+  animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+}
+#milestone-head{
+    display: inline-block;
+    font-weight: 900;
+    color:#db1d4b;
+    text-align: center;
+}
+#milestone{
+  margin-top:350px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right:auto;
+  list-style-type: none; 
+}
+#milestone li{
+  margin-top: 50px;
+  position: relative;
+}
+#milestone li:before{
+  content:'🤘👉';
+  font-size: 40px;
+  width:120px;
+  left:-150px;
+  position: absolute;
+  display: block;
+  top:0px;
+}
+#milestone-li{
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#milestone h4{
+  font-weight: 700;
+  text-align: left;
+}
+#milestone p{
+  text-align: left;
+}
+#milestone-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:375px){
+  #milestone li:before{
+    content:'🤘👉';
+    font-size: 20px;
+    left:-88px;
+    position: absolute;
+    display: block;
+    top:0px;
+  }
+  #stair{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+}
+#stair-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#chara{ 
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+}
+#chara-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+  animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#sand{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+
+}
+#sand-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+  animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+}
+#milestone li{
+  margin-top: 50px;
+  position: relative;
+  left:20px;
+}
+}
+@media screen and (min-width:376px) and (max-width:575px){
+    #milestone li:before{
+      content:'🤘👉';
+      font-size: 20px;
+      left:-88px;
+      position: absolute;
+      display: block;
+      top:0px;
+    }
+    #stair{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+  }
+  #stair-animate{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+      animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+  }
+  #chara{ 
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+  }
+  #chara-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+  }
+  #sand{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+
+  }
+  #sand-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+  }
+  #milestone li{
+    margin-top: 50px;
+    position: relative;
+    left:20px;
+  }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+  #milestone li:before{
+    content:'🤘👉';
+    font-size: 40px;
+    width:120px;
+    left:-120px;
+    position: absolute;
+    display: block;
+    top:0px;
+  }
+}

@@ -1,0 +1,45 @@
+footer{
+  background-color: #263238;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+
+}
+#footer-head{
+    font-weight: 700;
+    color:#db1d4b;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#gif{
+    max-width:280px;
+}
+#link{
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+#link a{
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 1.5rem;
+}
+#contact-us{
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    color:#db1d4b;
+    font-size: 24px;
+}
+#small{
+    margin-bottom: 0px;
+    color:whitesmoke;
+    text-align: center; 
+}
+@media screen and (max-width:470px){
+
+    #link a{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+}
