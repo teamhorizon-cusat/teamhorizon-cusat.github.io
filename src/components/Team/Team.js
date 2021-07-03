@@ -73,7 +73,7 @@ export default function Team() {
                    <Col md={6}>
                        <ScrollTrigger onEnter={onEnterViewport1} onExit={onExitViewport1}>
                          <h1 className="display-2" id={`team-main-head${t1?'-animate':''}`}>TEAM</h1>
-                         <p className="lead" id={`${t1?'team-p-animate':''}`}>(main guyss only ..yes this guys are responsible for everything)</p>
+                         <p className="lead" id={`${t1?'team-p-animate':''}`}>(main guys only)</p>
                        </ScrollTrigger>
                    </Col>
                    <Col md={6}>

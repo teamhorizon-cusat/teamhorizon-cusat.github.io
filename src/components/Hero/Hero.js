@@ -14,7 +14,7 @@ export default function Hero() {
            <Row id="hero-row">
                <Col md={6}>
                 <h1 className="display-1" id="hero-head">Team Horizon</h1>
-                <p className="h3 text-center" id="head-subtitle">building next gen rover that, one day roam on mars and beyound </p>
+                <p className="h3 text-center" id="head-subtitle">building next gen rover that, one day roam on mars and beyond </p>
                </Col>
                <Col md={6}>
                    <Container id="hero-section">
