@@ -7,6 +7,7 @@ import About from '../components/About/About';
 import Milestone from "../components/Milestone/Milestone";
 import Team from "../components/Team/Team";
 import Footer from "../components/Footer/Footer";
+import Photos from "../components/Photos/Photos";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Milestone />
       <Team />
+      <Photos />
      <Footer />
     </div>
   )

@@ -1,0 +1,36 @@
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.photo-title {
+    margin: auto;
+}
+
+.gallery-img {
+   width: 30%;
+   padding: 10px;
+   transition: 0.2s;
+}
+
+.gallery-img:hover {
+    padding: 0px;
+    border: 5px solid #db1d4b;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px){
+    .photos {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .gallery-img {
+        width: 60%;
+    }
+}
