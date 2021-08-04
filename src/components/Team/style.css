@@ -194,6 +194,20 @@ a:hover{
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
     }  
+    #image-container9{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+    }
+    #image-container9-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:30px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    }
  }
  @media screen and (min-width:376px) and (max-width:767px){
     #image-container1{
@@ -295,7 +309,6 @@ a:hover{
         top:20px;
         left:70px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
     }
     
     #image-container8{
@@ -312,6 +325,19 @@ a:hover{
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
     }  
+    #image-container9{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+    }
+    #image-container9-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:70px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    }
 
  }
 @media screen and (min-width:768px) and (max-width:991px){
@@ -431,7 +457,21 @@ a:hover{
         left:400px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
-    }  
+    } 
+    #image-container9{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+    }
+    #image-container9-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:100px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    } 
 }
 @media screen and (min-width:992px) and (max-width:1200px){
  
@@ -534,7 +574,6 @@ a:hover{
         top:20px;
         left:200px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
     }
     
     #image-container8{
@@ -550,6 +589,19 @@ a:hover{
         left:400px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
+    }
+    #image-container9{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+    }
+    #image-container9-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:200px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     }
 }
 @media screen and (min-width:1200px){
@@ -652,7 +704,6 @@ a:hover{
         top:20px;
         left:300px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
     }
     
     #image-container8{
@@ -667,7 +718,19 @@ a:hover{
         top:20px;
         left:600px;
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
+    }
+    #image-container9{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+    }
+    #image-container9-animate{
+        position:relative;
+        max-width:250px;
+        top:20px;
+        left:300px;
+        animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     }
     
 }

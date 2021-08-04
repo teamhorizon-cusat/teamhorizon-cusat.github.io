@@ -8,9 +8,11 @@ import Milestone from "../components/Milestone/Milestone";
 import Team from "../components/Team/Team";
 import Footer from "../components/Footer/Footer";
 import Photos from "../components/Photos/Photos";
+import Head from "../components/Head/Head";
 export default function Home() {
   return (
     <div>
+      <Head/>
       <NavBar/>
       <Hero />
       <About />

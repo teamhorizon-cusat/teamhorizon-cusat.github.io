@@ -1,3 +1,13 @@
+@keyframes slide-in-left {
+    0% {
+              transform: translateX(-1000px);
+               opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
 .photos {
     display: flex;
     flex-direction: row;
@@ -10,7 +20,17 @@
 .photo-title {
     margin: auto;
 }
-
+#gallery-head{
+    text-align: center;
+    font-weight: 900;
+    color:#db1d4b;
+}
+#gallery-head-animate{
+    text-align: center;
+    font-weight: 900;
+    color:#db1d4b;
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 .gallery-img {
    width: 30%;
    padding: 10px;

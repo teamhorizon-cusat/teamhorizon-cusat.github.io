@@ -8,7 +8,7 @@ import thpic7 from "../../assets/images/rover/thpic7.jpg"
 import "./style.css"
 import ScrollTrigger from "react-scroll-trigger"
 
-import { Container, Row, Col, Image } from "react-bootstrap"
+import { Container} from "react-bootstrap"
 
 export default function Photos() {
   const [t1, setT1] = React.useState(false)
@@ -42,7 +42,7 @@ export default function Photos() {
       height: 1,
     },
     {
-      src: thpic2,
+      src: thpic7,
       width: 1,
       height: 1,
     },
@@ -55,22 +55,18 @@ export default function Photos() {
   return (
     <>
       <Container className="mt-5">
-        <Row>
-          <Col md={6}>
             <ScrollTrigger onEnter={onEnterViewport1} onExit={onExitViewport1}>
               <h1
                 className="display-2"
-                id={`team-main-head${t1 ? "-animate" : ""}`}
+                id={`gallery-head${t1 ? "-animate" : ""}`}
               >
-                Gallery
+                GALLERY
               </h1>
-            </ScrollTrigger>
-          </Col>
-        </Row>
+            </ScrollTrigger>          
       </Container>
       <div className="photos">
         {photos.map((val, index) => {
-          return <img id={index} src={val.src} className="gallery-img" />
+          return <img id={index} src={val.src} className="gallery-img"  alt="images of the rover"/>
         })}
       </div>
     </>
