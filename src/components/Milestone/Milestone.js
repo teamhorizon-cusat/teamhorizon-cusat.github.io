@@ -12,6 +12,7 @@ export default function Milestone() {
     const[li2,setLi2] = useState(false);
     const[li3,setLi3] = useState(false);
     const[li4,setLi4] = useState(false);
+    const[li5,setLi5] = useState(false);
 
    const onEnterViewport = ()=>{
         setVisible(true);
@@ -43,6 +44,13 @@ export default function Milestone() {
     const onExitViewport4 = ()=>{
         setLi4(false);
       }
+      const onEnterViewport5 = ()=>{
+        setLi5(true);
+      } 
+    const onExitViewport5 = ()=>{
+        setLi5(false);
+      }
+      
       
     return (
         <Container className="mt-5 pt-5 mb-5 pb-5">
@@ -57,7 +65,7 @@ export default function Milestone() {
             
             <Container className="mt-5 text-center mx-auto">
                 <ul id="milestone">
-                    <ScrollTrigger onEnter={onEnterViewport1} onExit={onExitViewport1}>
+                    <ScrollTrigger onEnter={onEnterViewport1} onExit={onExitViewport1} >
                     <li data-number="1" id={`${li1?'milestone-li':''}`}>
                         <h4>Qualified URC 2020 PDR</h4>
                         <p>Got placed among top 96 teams in the world , in very first attempt</p>
@@ -71,12 +79,18 @@ export default function Milestone() {
                     </ScrollTrigger>
                     <ScrollTrigger onEnter={onEnterViewport3} onExit={onExitViewport3}>
                     <li data-number="3" id={`${li3?'milestone-li':''}`}>
-                        <h4>Qualified URC 2021 PDR</h4>
-                        <p>Qualified PDR among top 88 teams and only team from kerala to do so for two consecutive years</p>
+                        <h4>News Headline!</h4>
+                        <p>Made it to several<a target="_blank" href="https://english.mathrubhumi.com/education/articles/cusat-team-enters-round-2-of-university-rover-challenge-1.5365311">newspaper headlines</a></p>
                     </li>
                     </ScrollTrigger>
                     <ScrollTrigger onEnter={onEnterViewport4} onExit={onExitViewport4}>
                     <li data-number="4" id={`${li4?'milestone-li':''}`}>
+                        <h4>Qualified URC 2021 PDR</h4>
+                        <p>Qualified PDR among top 88 teams and only team from kerala to do so for two consecutive years</p>
+                    </li>
+                    </ScrollTrigger>
+                    <ScrollTrigger onEnter={onEnterViewport5} onExit={onExitViewport5}>
+                    <li data-number="5" id={`${li4?'milestone-li':''}`}>
                         <h4>Conducted Workshops</h4>
                         <p>conducted online workshops on industrial skills that were used in ROVER building solidworks,blender designing and arduino 150+ students from 15 different campus joined</p>
                     </li>

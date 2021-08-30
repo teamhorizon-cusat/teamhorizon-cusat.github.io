@@ -9,6 +9,7 @@ module.exports = {
     title: "Team Horizon",
   },
   /* Your site config here */
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
