@@ -8,7 +8,7 @@ const Sponsors = () => {
     return (
     <Container fluid id="sponsors">
         <h1>
-            Special Thanks 💝
+            Special Thanks <span role="img" aria-label="heart emoji">💝</span>
         </h1>
         <Row id="teqip">
             <Image  src={teqip} alt="teqip logo" id="teqip-logo"/>

@@ -21,3 +21,12 @@
 #sponsor-names {
   margin: 2rem 0;
 }
+
+@media (max-width:768px){
+  #teqip-logo {
+    width: 38%;
+  }
+  #sponsor-names>div+div {
+    margin-top: 1rem;
+  }
+}

@@ -80,7 +80,7 @@ export default function Milestone() {
                     <ScrollTrigger onEnter={onEnterViewport3} onExit={onExitViewport3}>
                     <li data-number="3" id={`${li3?'milestone-li':''}`}>
                         <h4>News Headline!</h4>
-                        <p>Made it to several<a target="_blank" href="https://english.mathrubhumi.com/education/articles/cusat-team-enters-round-2-of-university-rover-challenge-1.5365311">newspaper headlines</a></p>
+                        <p>Made it to several<a target="_blank" rel="noreferrer" href="https://english.mathrubhumi.com/education/articles/cusat-team-enters-round-2-of-university-rover-challenge-1.5365311">newspaper headlines</a></p>
                     </li>
                     </ScrollTrigger>
                     <ScrollTrigger onEnter={onEnterViewport4} onExit={onExitViewport4}>
@@ -90,7 +90,7 @@ export default function Milestone() {
                     </li>
                     </ScrollTrigger>
                     <ScrollTrigger onEnter={onEnterViewport5} onExit={onExitViewport5}>
-                    <li data-number="5" id={`${li4?'milestone-li':''}`}>
+                    <li data-number="5" id={`${li5?'milestone-li':''}`}>
                         <h4>Conducted Workshops</h4>
                         <p>conducted online workshops on industrial skills that were used in ROVER building solidworks,blender designing and arduino 150+ students from 15 different campus joined</p>
                     </li>

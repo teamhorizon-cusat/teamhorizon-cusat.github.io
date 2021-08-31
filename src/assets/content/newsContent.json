@@ -1,0 +1,18 @@
+{
+    "news1":{
+        "heading": "sample Heading",
+        "date": "2018-5-12",
+        "description": "text goes here like lroem ipsum"
+    },
+    "news2":{
+        "heading": "sample Heading",
+        "date": "2018-5-12",
+        "description": "text goes here like lroem ipsum"
+    },
+    "news3":{
+        "heading": "sample Heading",
+        "date": "2018-5-12",
+        "description": "text goes here like lroem ipsum"
+    }
+
+}
