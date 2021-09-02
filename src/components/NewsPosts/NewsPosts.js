@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Container, Row, Card } from 'react-bootstrap';
 import newsObject from '../../assets/content/newsContent.json'
 import "./style.css";
 import ScrollTrigger from 'react-scroll-trigger';
@@ -18,25 +18,27 @@ const NewsPosts = () => {
       } 
 
     return(
-        <div className="NewsArea">
+        <Container fluid className="NewsArea">
         
         <hr/>
             {
                 Object.entries(newsObject).map((newsItem,index) => (
-                    <ScrollTrigger className="mx-auto" onEnter={onEnterViewport} >
-                        <Card className={anim?'card-anim':''}>
-                        <Card.Body>
-                            <Card.Title>{newsItem[1].heading}</Card.Title>
-                            <Card.Subtitle>{formatDate(newsItem[1].date)}</Card.Subtitle>
-                            <Card.Text>
-                                {newsItem[1].description}
-                            </Card.Text>
-                        </Card.Body>
-                        </Card>
-                    </ScrollTrigger>
+                    <Row className="post">
+                        <ScrollTrigger  onEnter={onEnterViewport} >
+                            <Card className={anim?'card-anim':''}>
+                            <Card.Body>
+                                <Card.Title>{newsItem[1].heading}</Card.Title>
+                                <Card.Subtitle>{formatDate(newsItem[1].date)}</Card.Subtitle>
+                                <Card.Text>
+                                    {newsItem[1].description}
+                                </Card.Text>
+                            </Card.Body>
+                            </Card>
+                        </ScrollTrigger>
+                    </Row>
                 ))
             }
-        </div>
+        </Container>
     )
 }
 
