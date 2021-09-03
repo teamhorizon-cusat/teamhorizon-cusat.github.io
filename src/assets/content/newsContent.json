@@ -13,6 +13,16 @@
         "heading": "sample Heading",
         "date": "2018-5-12",
         "description": "text goes here like lroem ipsum"
+    },
+    "news4":{
+        "heading": "sample Heading",
+        "date": "2018-5-12",
+        "description": "text goes here like lroem ipsum"
+    },
+    "news5":{
+        "heading": "sample Heading",
+        "date": "2018-5-12",
+        "description": "text goes here like lroem ipsum"
     }
 
 }

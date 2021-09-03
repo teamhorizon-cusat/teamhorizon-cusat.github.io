@@ -10,6 +10,8 @@ import Footer from "../components/Footer/Footer";
 import Photos from "../components/Photos/Photos";
 import Head from "../components/Head/Head";
 import Sponsors from "../components/Sponsors/Sponsors";
+
+
 export default function Home() {
   return (
     <div>

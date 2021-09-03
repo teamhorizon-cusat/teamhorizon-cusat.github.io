@@ -1,9 +1,10 @@
-.navbarContainerFluid{
-    background-color: #263238;
+.navbarContainerFluid {
+  background-color: #263238;
+  height: 63px;
 }
-.navbarContainer{
-    background-color: #263238;
+.navbarContainer {
+  background-color: #263238;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color:white;
+  color: white;
 }

@@ -12,7 +12,7 @@ function formatDate(string){
 
 
 const NewsPosts = () => {
-    const[anim,setAnim] = React.useState(false);
+    const[animation,setAnim] = React.useState(false);
     const onEnterViewport = ()=>{
         setAnim(true);
       } 
@@ -23,19 +23,22 @@ const NewsPosts = () => {
         <hr/>
             {
                 Object.entries(newsObject).map((newsItem,index) => (
-                    <Row className="post">
-                        <ScrollTrigger  onEnter={onEnterViewport} >
-                            <Card className={anim?'card-anim':''}>
-                            <Card.Body>
-                                <Card.Title>{newsItem[1].heading}</Card.Title>
-                                <Card.Subtitle>{formatDate(newsItem[1].date)}</Card.Subtitle>
-                                <Card.Text>
-                                    {newsItem[1].description}
-                                </Card.Text>
-                            </Card.Body>
-                            </Card>
-                        </ScrollTrigger>
-                    </Row>
+                    <div className="individualpost">
+                        <Row className="post">
+                            <ScrollTrigger  onEnter={onEnterViewport} className="postscroll">
+                                <Card className={animation?'card-anim':''}>
+                                <Card.Body>
+                                    <Card.Title>{newsItem[1].heading}</Card.Title>
+                                    <Card.Subtitle>{formatDate(newsItem[1].date)}</Card.Subtitle>
+                                    <Card.Text>
+                                        {newsItem[1].description}
+                                    </Card.Text>
+                                </Card.Body>
+                                </Card>
+                            </ScrollTrigger>
+                        </Row>
+                        <hr/>
+                    </div>
                 ))
             }
         </Container>
