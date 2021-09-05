@@ -1,56 +1,90 @@
 @keyframes slide-in-left {
-    0% {
-              transform: translateX(-1000px);
-               opacity: 0;
-    }
-    100% {
-              transform: translateX(0);
-              opacity: 1;
-    }
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    margin: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  justify-content: center;
+}
+.photos button {
+  width: 33.3%;
+  padding: 0 0;
+  border: 0;
+  background: transparent;
+  height: 192px;
 }
 
 .photo-title {
-    margin: auto;
+  margin: auto;
 }
-#gallery-head{
-    text-align: center;
-    font-weight: 900;
-    color:#db1d4b;
+#gallery-head {
+  text-align: center;
+  font-weight: 900;
+  color: #db1d4b;
 }
-#gallery-head-animate{
-    text-align: center;
-    font-weight: 900;
-    color:#db1d4b;
-    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+#gallery-head-animate {
+  text-align: center;
+  font-weight: 900;
+  color: #db1d4b;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .gallery-img {
-   width: 30%;
-   padding: 10px;
-   transition: 0.2s;
+  width: 100%;
+  padding: 10px;
+  transition: 0.2s;
+  height: 100%;
 }
 
 .gallery-img:hover {
-    padding: 0px;
-    border: 5px solid #db1d4b;
-    cursor: pointer;
+  padding: 0px;
+  border: 5px solid #db1d4b;
+  cursor: pointer;
 }
 
+.modal-content {
+  height: 90vh;
+  background-color: #fff0;
+  border: 0;
+}
+.modal-header,
+.modal-body {
+  padding: 0 0;
+  border: 0;
+}
 
-@media (max-width:768px){
-    .photos {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    .gallery-img {
-        width: 60%;
-    }
+.modal-header > button {
+  margin-left: auto;
+}
+.modal-body {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.modal-body > img {
+  width: 100%;
+  max-height: 85vh;
+}
+
+@media (max-width: 768px) {
+  .photos {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .gallery-img {
+    width: 60%;
+  }
 }

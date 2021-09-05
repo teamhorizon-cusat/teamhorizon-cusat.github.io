@@ -10,7 +10,6 @@ export default function Milestone() {
     const[visible,setVisible] = useState(false);
     const[li1,setLi1] = useState(false);
     const[li2,setLi2] = useState(false);
-    const[li3,setLi3] = useState(false);
     const[li4,setLi4] = useState(false);
     const[li5,setLi5] = useState(false);
     const[li6,setLi6] = useState(false);
@@ -32,12 +31,6 @@ export default function Milestone() {
       } 
     const onExitViewport2 = ()=>{
         setLi2(false);
-      }
-      const onEnterViewport3 = ()=>{
-        setLi3(true);
-      } 
-    const onExitViewport3 = ()=>{
-        setLi3(false);
       }
       const onEnterViewport4 = ()=>{
         setLi4(true);

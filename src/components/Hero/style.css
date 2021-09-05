@@ -1,450 +1,453 @@
-#hero-head{
-    font-weight: 900;
-    color:#263238;
+#hero-head {
+  font-weight: 900;
+  color: #263238;
 }
-#hero-subtitle{
-    font-weight:100;
+#hero-subtitle {
+  font-weight: 100;
 }
-#hero-section{
-    position: relative;
-    display: inline-block;
+#hero-section {
+  position: relative;
+  display: inline-block;
 }
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-
-@keyframes wind{
-    0%,100%{
-        transform: rotate(-2deg);
-    }
-    50%{
-        transform: rotate(2deg);
-    }
+  to {
+    transform: rotate(359deg);
+  }
 }
-@keyframes shake{
-   0%{
-       left:0px
-   }
-   20%{
-       left:-1px;
-   }
-   40%{
-       left:1px;
-   }
-   60%{
-       left:-3px;
-   }
-   80%{
-       left:3px;
-   }
-   100%{
-       left:0px;
-   }
+
+@keyframes wind {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes shake {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: -1px;
+  }
+  40% {
+    left: 1px;
+  }
+  60% {
+    left: -3px;
+  }
+  80% {
+    left: 3px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 /* put everything in media query */
 
 /* this much */
-@media screen and (max-width:425px){
-    .display-1{
-        font-size: 5rem;
-        text-align: center;
+@media screen and (max-width: 425px) {
+  .display-1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  @keyframes diagonal {
+    0% {
+      left: 0px;
+      top: 200px;
     }
-    @keyframes diagonal {
-        0%{
-          left:0px;
-          top:200px;
-        }
-        100%{
-          left:175px;
-          top:86px;
-        }
+    100% {
+      left: 175px;
+      top: 86px;
     }
-    #hero-row{
-        max-height: 750px;
-       }
-       #hero-image{
-           position: relative;
-           display: inline-block;
-           top:0px;
-           left:32px;
-           padding:0px;
-       }
-       #outerSpace{
-         display:block;
-         max-width: 100%; 
-       }
-       #metoer{
-           position: absolute;
-           width:40px;
-           top:400px;
-           left:0px;
-           animation: diagonal 4s infinite ease-out;
-       }
-       #planet{
-           position: absolute;
-           width:50px;
-           top:55px;
-           left:163px;
-           animation: rotation 4s infinite linear;
-       }
-       #hero-rocket{
-           position: relative;
-           display: inline-block;
-           top:-111px;
-           left:-45px;
-       }
-       #deepSpace{
-           display: block;
-           max-width: 100%;
-       }
-       #rocket{
-           position:absolute;
-           top:-40px;
-           left:0px;
-           animation: shake 1s infinite;
-       }
-       #smoke{
-           position: absolute;
-           width:84%;
-           top:0px;
-           left:30px;
-           animation: wind 3s  infinite;
-       }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 32px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 40px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 50px;
+    top: 55px;
+    left: 163px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -111px;
+    left: -45px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    width: 84%;
+    top: 0px;
+    left: 30px;
+    animation: wind 3s infinite;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 575px) {
+  .display-1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  @keyframes diagonal {
+    0% {
+      left: 0px;
+      top: 372px;
+    }
+    100% {
+      left: 250px;
+      top: 133px;
+    }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 32px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 65px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 80px;
+    top: 95px;
+    left: 260px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -111px;
+    left: -45px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    width: 84%;
+    top: 0px;
+    left: 30px;
+    animation: wind 3s infinite;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .display-1 {
+    font-size: 7rem;
+    text-align: center;
+  }
+  @keyframes diagonal {
+    0% {
+      left: 0px;
+      top: 300px;
+    }
+    100% {
+      left: 332px;
+      top: 129px;
+    }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 43px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 40px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 90px;
+    top: 102px;
+    left: 336px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -153px;
+    left: -60px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    width: 93%;
+    top: -10px;
+    left: 17px;
+    animation: wind 3s infinite;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .display-1 {
+    font-size: 6rem;
+  }
+  @keyframes diagonal {
+    0% {
+      left: -45px;
+      top: 300px;
+    }
+    100% {
+      left: 166px;
+      top: 97px;
+    }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 43px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 40px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 70px;
+    top: 60px;
+    left: 170px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -153px;
+    left: -60px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    width: 260px;
+    top: -10px;
+    left: 17px;
+    animation: wind 3s infinite;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .display-1 {
+    font-size: 8rem;
+  }
+  @keyframes diagonal {
+    0% {
+      left: -45px;
+      top: 300px;
+    }
+    100% {
+      left: 300px;
+      top: 100px;
+    }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 43px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 50px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 70px;
+    top: 70px;
+    left: 300px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -247px;
+    left: -30px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: wind 3s infinite;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .display-1 {
+    font-size: 8rem;
+  }
+  @keyframes diagonal {
+    0% {
+      left: -100px;
+      top: 300px;
+    }
+    100% {
+      left: 300px;
+      top: 100px;
+    }
+  }
+  #hero-row {
+    max-height: 750px;
+  }
 
-}
-@media screen and (min-width:426px) and (max-width:575px){
-    .display-1{
-        font-size: 5rem;
-        text-align: center;
-    }
-    @keyframes diagonal {
-        0%{
-          left:0px;
-          top:372px;
-        }
-        100%{
-          left:250px;
-          top:133px;
-        }
-    }
-    #hero-row{
-        max-height: 750px;
-       }
-       #hero-image{
-           position: relative;
-           display: inline-block;
-           top:0px;
-           left:32px;
-           padding:0px;
-       }
-       #outerSpace{
-         display:block;
-         max-width: 100%; 
-       }
-       #metoer{
-           position: absolute;
-           width:65px;
-           top:400px;
-           left:0px;
-           animation: diagonal 4s infinite ease-out;
-       }
-       #planet{
-           position: absolute;
-           width:80px;
-           top:95px;
-           left:260px;
-           animation: rotation 4s infinite linear;
-       }
-       #hero-rocket{
-           position: relative;
-           display: inline-block;
-           top:-111px;
-           left:-45px;
-       }
-       #deepSpace{
-           display: block;
-           max-width: 100%;
-       }
-       #rocket{
-           position:absolute;
-           top:-40px;
-           left:0px;
-           animation: shake 1s infinite;
-       }
-       #smoke{
-           position: absolute;
-           width:84%;
-           top:0px;
-           left:30px;
-           animation: wind 3s  infinite;
-       }
-
-}
-@media screen and (min-width:576px) and (max-width:767px){
-    .display-1{
-        font-size: 7rem;
-        text-align: center;
-    }
-    @keyframes diagonal {
-        0%{
-          left:0px;
-          top:300px;
-        }
-        100%{
-          left:332px;
-          top:129px;
-        }
-    }
-    #hero-row{
-        max-height: 750px;
-       }
-       #hero-image{
-           position: relative;
-           display: inline-block;
-           top:0px;
-           left:43px;
-           padding:0px;
-       }
-       #outerSpace{
-         display:block;
-         max-width: 100%; 
-       }
-       #metoer{
-           position: absolute;
-           width:40px;
-           top:400px;
-           left:0px;
-           animation: diagonal 4s infinite ease-out;
-       }
-       #planet{
-           position: absolute;
-           width:90px;
-           top:102px;
-           left:336px;
-           animation: rotation 4s infinite linear;
-       }
-       #hero-rocket{
-           position: relative;
-           display: inline-block;
-           top:-153px;
-           left:-60px;
-       }
-       #deepSpace{
-           display: block;
-           max-width: 100%;
-       }
-       #rocket{
-           position:absolute;
-           top:-40px;
-           left:0px;
-           animation: shake 1s infinite;
-       }
-       #smoke{
-           position: absolute;
-           width:93%;
-           top:-10px;
-           left:17px;
-           animation: wind 3s  infinite;
-       }
-}
-@media screen and (min-width:768px) and (max-width:991px){
-    .display-1{
-        font-size: 6rem;
-    }
-    @keyframes diagonal {
-        0%{
-          left:-45px;
-          top:300px;
-        }
-        100%{
-          left:166px;
-          top:97px;
-        }
-    }
-    #hero-row{
-        max-height: 750px;
-       }
-       #hero-image{
-           position: relative;
-           display: inline-block;
-           top:0px;
-           left:43px;
-           padding:0px;
-       }
-       #outerSpace{
-         display:block;
-         max-width: 100%; 
-       }
-       #metoer{
-           position: absolute;
-           width:40px;
-           top:400px;
-           left:0px;
-           animation: diagonal 4s infinite ease-out;
-       }
-       #planet{
-           position: absolute;
-           width:70px;
-           top:60px;
-           left:170px;
-           animation: rotation 4s infinite linear;
-       }
-       #hero-rocket{
-           position: relative;
-           display: inline-block;
-           top:-153px;
-           left:-60px;
-       }
-       #deepSpace{
-           display: block;
-           max-width: 100%;
-       }
-       #rocket{
-           position:absolute;
-           top:-40px;
-           left:0px;
-           animation: shake 1s infinite;
-       }
-       #smoke{
-           position: absolute;
-           width:260px;
-           top:-10px;
-           left:17px;
-           animation: wind 3s  infinite;
-       }
-}
-@media screen and (min-width:992px) and (max-width:1200px){
-    .display-1{
-        font-size: 8rem;
-    }
-    @keyframes diagonal {
-        0%{
-          left:-45px;
-          top:300px;
-        }
-        100%{
-          left:300px;
-          top:100px;
-        }
-    }
-    #hero-row{
-        max-height: 750px;
-       }
-       #hero-image{
-           position: relative;
-           display: inline-block;
-           top:0px;
-           left:43px;
-           padding:0px;
-       }
-       #outerSpace{
-         display:block;
-         max-width: 100%; 
-       }
-       #metoer{
-           position: absolute;
-           width:50px;
-           top:400px;
-           left:0px;
-           animation: diagonal 4s infinite ease-out;
-       }
-       #planet{
-           position: absolute;
-           width:70px;
-           top:70px;
-           left:300px;
-           animation: rotation 4s infinite linear;
-       }
-       #hero-rocket{
-           position: relative;
-           display: inline-block;
-           top:-247px;
-           left:-30px;
-       }
-       #deepSpace{
-           display: block;
-           max-width: 100%;
-       }
-       #rocket{
-           position:absolute;
-           top:0px;
-           left:0px;
-           animation: shake 1s infinite;
-       }
-       #smoke{
-           position: absolute;
-           top:0px;
-           left:0px;
-           animation: wind 3s  infinite;
-       }
-}
-@media screen and (min-width:1200px){
-    .display-1{
-        font-size: 8rem;
-    }
-    @keyframes diagonal {
-        0%{
-          left:-100px;
-          top:300px;
-        }
-        100%{
-          left:300px;
-          top:100px;
-        }
-    }
-    #hero-row{
-     max-height: 750px;
-    }
-    #hero-image{
-        position: relative;
-        display: inline-block;
-        top:0px;
-        left:70px;
-        padding:0px;
-    }
-    #outerSpace{
-      display:block;
-      max-width: 100%; 
-    }
-    #metoer{
-        position: absolute;
-        width:80px;
-        top:400px;
-        left:0px;
-        animation: diagonal 4s infinite ease-out;
-    }
-    #planet{
-        position: absolute;
-        width:130px;
-        top:70px;
-        left:300px;
-        animation: rotation 4s infinite linear;
-    }
-    #hero-rocket{
-        position: relative;
-        display: inline-block;
-        top:-340px;
-        left:-120px;
-    }
-    #deepSpace{
-        display: block;
-        max-width: 100%;
-    }
-    #rocket{
-        position:absolute;
-        top:0px;
-        left:0px;
-        animation: shake 1s infinite;
-    }
-    #smoke{
-        position: absolute;
-        top:0px;
-        left:0px;
-        animation: wind 3s  infinite;
-    }
+  #hero-row .col-md-6 {
+    width: 49%;
+  }
+  #hero-image {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    left: 70px;
+    padding: 0px;
+  }
+  #outerSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #metoer {
+    position: absolute;
+    width: 80px;
+    top: 400px;
+    left: 0px;
+    animation: diagonal 4s infinite ease-out;
+  }
+  #planet {
+    position: absolute;
+    width: 130px;
+    top: 70px;
+    left: 300px;
+    animation: rotation 4s infinite linear;
+  }
+  #hero-rocket {
+    position: relative;
+    display: inline-block;
+    top: -405px;
+    left: -120px;
+  }
+  #deepSpace {
+    display: block;
+    max-width: 100%;
+  }
+  #rocket {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shake 1s infinite;
+  }
+  #smoke {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: wind 3s infinite;
+  }
 }
