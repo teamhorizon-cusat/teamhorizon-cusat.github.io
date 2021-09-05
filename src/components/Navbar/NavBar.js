@@ -2,6 +2,8 @@ import React from 'react'
 import {Navbar,Nav,Container}  from 'react-bootstrap'
 import './style.css';
 import logo from '../../assets/images/navbarLogo.png';
+import { Link } from 'gatsby';
+
 export default function NavBar() {
     return (
         <Container fluid className="navbarContainerFluid">
@@ -27,6 +29,9 @@ export default function NavBar() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="#contactUs">Contact Us</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Link to="/News/" className="nav-link">News</Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

@@ -9,6 +9,9 @@ import Team from "../components/Team/Team";
 import Footer from "../components/Footer/Footer";
 import Photos from "../components/Photos/Photos";
 import Head from "../components/Head/Head";
+import Sponsors from "../components/Sponsors/Sponsors";
+
+
 export default function Home() {
   return (
     <div>
@@ -19,7 +22,8 @@ export default function Home() {
       <Milestone />
       <Team />
       <Photos />
-     <Footer />
+      <Sponsors />
+      <Footer />
     </div>
   )
 }

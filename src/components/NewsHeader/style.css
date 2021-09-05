@@ -1,0 +1,12 @@
+.newsheader {
+  text-align: center;
+}
+
+.newsheader > h3 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+#horizonLightTheme {
+  margin-top: 1.5rem;
+}
