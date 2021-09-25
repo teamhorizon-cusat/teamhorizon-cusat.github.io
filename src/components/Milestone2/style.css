@@ -1,0 +1,360 @@
+body{
+  overflow-x: hidden;
+}
+.mile-container{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 23rem;
+    margin-bottom: 5rem;
+}
+
+.mile-timeline{
+    position: relative;
+    min-height: 150px;
+}
+
+.mile-line{
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 2px);
+    width: 4px;
+    top: -50px;
+    bottom: -50px;
+    background-color: #db1d4b;
+    display: block;
+}
+
+.mile-line:after,.mile-line:before{
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #db1d4b;
+    display: block;
+    content: '';
+}
+
+.mile-line::after{
+    bottom: 0;
+}
+
+.content p{
+  text-align: justify;
+}
+
+.mile-section{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 1400ms ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 275px;
+}
+
+.mile-section h4{
+  text-align: right;
+}
+
+
+.mile-section:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
+
+.mile-section:nth-child(odd) h4{
+  text-align: left;
+}
+
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #db1d4b;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+
+h1{
+    font-weight: 400;
+}
+
+.milestone{
+    margin-top: 9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================== */
+@keyframes fade-in-right {
+    0% {
+              transform: translateX(50px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+              transform: translateX(-50px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+              transform: translateZ(-80px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateZ(0);
+              opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+#stair{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+}
+#stair-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#chara{ 
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+}
+#chara-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+  animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#sand{
+    position: absolute;
+    display: inline-block;
+    max-width:400px;
+}
+#sand-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:400px;
+  animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+}
+#milestone-head{
+    display: inline-block;
+    font-weight: 900;
+    color:#db1d4b;
+    text-align: center;
+}
+#milestone{
+  margin-top:350px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right:auto;
+  list-style-type: none; 
+}
+
+#milestone h4{
+  font-weight: 700;
+  text-align: left;
+}
+#milestone p{
+  text-align: left;
+}
+#milestone-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:375px){
+  #stair{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+}
+#stair-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#chara{ 
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+}
+#chara-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+  animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+#sand{
+    position: absolute;
+    display: inline-block;
+    max-width:280px;
+    left:40px;
+
+}
+#sand-animate{
+  position: absolute;
+  display: inline-block;
+  max-width:280px;
+  left:40px;
+  animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+}
+
+.mile-line{
+  left: auto;
+}
+
+.mile-section{
+  flex-direction: row;
+  transform: translateX(100%);
+}
+
+.mile-section:nth-child(odd){
+  flex-direction: row;
+}
+
+.mile-section h4{
+  text-align: left;
+}
+
+.bead{
+  left: 2px;
+}
+
+.content{
+  width: 100%;
+  margin-left: 2rem;
+}
+}
+
+@media screen and (min-width:376px) and (max-width:575px){
+
+  #hero-rocket{
+    top: -327px;
+  }
+
+    #stair{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+  }
+  #stair-animate{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+      animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+  }
+  #chara{ 
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+  }
+  #chara-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+  }
+  #sand{
+      position: absolute;
+      display: inline-block;
+      max-width:350px;
+      left:40px;
+
+  }
+  #sand-animate{
+    position: absolute;
+    display: inline-block;
+    max-width:350px;
+    left:40px;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+
+  }
+
+  .mile-line{
+    left: auto;
+  }
+
+  .mile-section{
+    flex-direction: row;
+    transform: translateX(100%);
+  }
+
+  .mile-section:nth-child(odd){
+    flex-direction: row;
+ }
+
+ .mile-section h4{
+  text-align: left;
+}
+  .bead{
+    left: 2px;
+  }
+
+  .content{
+    width: 100%;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+
+
+}

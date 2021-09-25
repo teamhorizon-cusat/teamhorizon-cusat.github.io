@@ -1,28 +1,23 @@
 {
     "news1":{
-        "heading": "sample Heading",
-        "date": "2018-5-12",
-        "description": "text goes here like lroem ipsum"
+        "heading": "🍰 Horizon's Second Aniversary !",
+        "date": "2021-9-21",
+        "description": "Gear Up for Horizon's second aniversary this Saturday, on 25th for a fun event featuring Shooja A, Vikram Sarabhai Space Center, ISRO."
     },
     "news2":{
-        "heading": "sample Heading",
-        "date": "2018-5-12",
-        "description": "text goes here like lroem ipsum"
+        "heading": "🚀 New Team Leads",
+        "date": "2021-8-13",
+        "description": "Our Science , Media  and Outreach Teams got new leads! Check out the teams page to see them."
     },
     "news3":{
-        "heading": "sample Heading",
-        "date": "2018-5-12",
-        "description": "text goes here like lroem ipsum"
+        "heading":  "🎉 AIR 6 for Horizon!",
+        "date": "2021-7-21",
+        "description": "ERC PDR Results are out and Horizon Scores AIR 6 and a Global Rank of 39 this year."
     },
     "news4":{
-        "heading": "sample Heading",
-        "date": "2018-5-12",
-        "description": "text goes here like lroem ipsum"
-    },
-    "news5":{
-        "heading": "sample Heading",
-        "date": "2018-5-12",
-        "description": "text goes here like lroem ipsum"
+        "heading": "👼 New Faces",
+        "date": "2021-6-16",
+        "description": "Team Horizon expands and we have our latest recruits in all subteams making the total members now around 60+"
     }
 
 }

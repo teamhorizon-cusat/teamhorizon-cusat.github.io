@@ -1,0 +1,29 @@
+#donationContainer{
+    text-align: center;
+    height: 10rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 5rem 0 7rem;
+}
+
+#donationContainer>h2{
+    color: #db1d4b;
+    font-weight: 600;
+    font-size: calc(1.075rem + 3.9vw);
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+#animdonation{
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.razorpay-payment-button>a{
+    width: 186.5px;
+    height: 50px;
+}
+
+#donation{
+    margin-top: 3rem;
+}
