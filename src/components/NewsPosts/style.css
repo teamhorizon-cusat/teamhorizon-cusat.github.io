@@ -15,10 +15,11 @@
 .card {
   margin: auto;
   width: 50%;
+  border: 4px solid rgba(0,0,0,.125);
 }
 
 .card.card-anim {
-  animation: fade-in-right 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-right 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .card-body {
@@ -34,6 +35,7 @@
 
 .card-text {
   margin-top: 1.5rem;
+  padding: 0 2.8rem;
 }
 
 .card {
