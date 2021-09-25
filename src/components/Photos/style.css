@@ -52,28 +52,28 @@
   cursor: pointer;
 }
 
-.modal-content {
+.modal__content {
   height: 90vh;
   background-color: #fff0;
   border: 0;
 }
-.modal-header,
-.modal-body {
+.modal__header,
+.modal__body {
   padding: 0 0;
   border: 0;
 }
 
-.modal-header > button {
+.modal__header > button {
   margin-left: auto;
 }
-.modal-body {
+.modal__body {
   height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
 
-.modal-body > img {
+.modal__body > img {
   width: 100%;
   max-height: 85vh;
 }
