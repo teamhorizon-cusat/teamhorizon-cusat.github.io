@@ -279,6 +279,10 @@ h1{
   width: 100%;
   margin-left: 2rem;
 }
+
+.milestone{
+  margin-top: 2.8rem;
+}
 }
 
 @media screen and (min-width:376px) and (max-width:575px){
@@ -352,6 +356,10 @@ h1{
   .content{
     width: 100%;
     margin-left: 2rem;
+  }
+
+  .milestone{
+    margin-top: 2.8rem;
   }
 }
 @media screen and (min-width:576px) and (max-width:768px){

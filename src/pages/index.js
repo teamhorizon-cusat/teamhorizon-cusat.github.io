@@ -7,7 +7,7 @@ import About from "../components/About/About"
 import Milestone2 from "../components/Milestone2/Milestone2"
 import Team from "../components/Team/Team"
 import Footer from "../components/Footer/Footer"
-import Photos from "../components/Photos/Photos"
+import SlidingG from "../components/SlidingGallery/SlidingG"
 import Head from "../components/Head/Head"
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <About />
       <Milestone2 />
       <Team />
-      <Photos />
+      <SlidingG />
       <Footer />
     </div>
   )

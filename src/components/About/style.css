@@ -13,9 +13,19 @@
 @media screen and (max-width: 425px) {
   #about {
     margin-top: 50px;
-    padding-top: 100px;
     background-color: #263238;
   }
+
+  #about-content{
+      padding: 0.2rem;
+      word-spacing: -0.1rem;
+      text-align: justify;
+  }
+  #about div {
+    text-align: justify;
+    word-spacing: -0.1rem;
+  }
+
   #about-logo {
     margin-left: auto;
     margin-right: auto;
