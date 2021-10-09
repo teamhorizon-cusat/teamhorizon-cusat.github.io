@@ -1,0 +1,116 @@
+.pastteam-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pastteam-component{
+    width:500px;
+    height:400px;
+    border:#db1d4b;
+    border-width:2px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 8px;
+    margin:20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+}
+.pastteam-heading{
+    margin-top: 20px;
+}
+.pastteam-component div{
+    color:#db1d4b;
+    font-weight:900;
+}
+.pastteam-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pastteam-person{
+    padding:10px;
+    border-style: solid;
+    border-width:1px;
+    border-radius: 8px;
+    border-color: #db1d4b;
+    word-wrap: break-word;
+    width:150px;
+    height: 135px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pastteam-person p {
+    margin-bottom: 0px;
+}
+.pastteam-person img{
+    width:40px;
+    align-self: center;
+}
+@media  screen and (max-width:425px) {
+    .pastteam-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pastteam-component{
+        width:500px;
+        height:400px;
+        border:#db1d4b;
+        border-width:2px;
+        border-style: solid;
+        background-color: white;
+        border-radius: 8px;
+        margin:30px;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+    }
+    
+    .pastteam-component div{
+        color:#db1d4b;
+        font-weight:900;
+    }
+    .pastteam-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pastteam-person{
+        padding:10px;
+        border-style: solid;
+        border-width:1px;
+        border-radius: 8px;
+        border-color: #db1d4b;
+        word-wrap: break-word;
+        width:102px;
+        height: 100px;
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pastteam-person p {
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    .pastteam-person img{
+        width:40px;
+        align-self: center;
+    } 
+}
+
+@media screen and (max-width:768px){
+    .pastteam-component{
+        width:281px;
+        height:281px;
+        border:#db1d4b;
+        border-width:2px;
+        border-style: solid;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+    }
+}

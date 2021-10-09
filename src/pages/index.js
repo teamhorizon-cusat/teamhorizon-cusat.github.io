@@ -9,13 +9,15 @@ import Team from "../components/Team/Team";
 import Footer from "../components/Footer/Footer";
 import Photos from "../components/Photos/Photos";
 import Head from "../components/Head/Head";
+ import Rover from '../components/Rover/Final';
+
 export default function Home() {
   return (
     <div>
-      <Head/>
       <NavBar/>
       <Hero />
-      <About />
+      <Rover />
+       <About />
       <Milestone />
       <Team />
       <Photos />

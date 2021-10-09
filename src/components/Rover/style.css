@@ -1,0 +1,14 @@
+.rover-container{
+position:relative;
+}
+.id{
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;
+    color: crimson;
+}

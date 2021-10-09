@@ -2,3 +2,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+.canvasthree{
+    min-height:700px;
+}
+canvas{
+    height: 500px;
+}
