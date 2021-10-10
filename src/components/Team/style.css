@@ -30,13 +30,27 @@
               opacity: 1;
     }
   }
+
   #team-card {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      gap:20px;
-  }
+    display: flex;
+    flex-flow: column;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.team-row > * {
+    box-shadow: 2px 3px 11px 0px rgb(255 199 213);
+    border-radius: 24px;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #team-img{
     max-width:250px;
 }
@@ -635,4 +649,14 @@ a:hover{
         animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     }
     
+}
+
+
+{
+    /* box-shadow: 2px 3px 11px 0px rgb(255 199 213);
+    border-radius: 24px;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }

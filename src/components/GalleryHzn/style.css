@@ -1,0 +1,31 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.galleryContainer{
+    text-align: center;
+}
+
+.image-gallery{
+    display: inline-block;
+    max-width: 100%;
+}
+
+#gallery-head {
+    text-align: center;
+    font-weight: 900;
+    color: #db1d4b;
+    margin: 3rem auto;
+}
+#gallery-head-animate {
+    margin: 3rem auto;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 900;
+    color: #db1d4b;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media screen and (max-width: 425px){
+    .image-gallery-content.bottom.fullscreen{
+        margin-top: 50%;
+    }
+}
