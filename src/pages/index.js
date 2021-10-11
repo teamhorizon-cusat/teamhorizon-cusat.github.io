@@ -8,6 +8,7 @@ import Milestone from "../components/Milestone/Milestone2"
 import Team from "../components/Team/Team"
 import Footer from "../components/Footer/Footer"
 import GalleryHzn from "../components/GalleryHzn/GalleryHzn"
+import Rover from "../components/Rover/Rover"
 
 import Head from "../components/Head/Head"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <About />
+      <Rover />
       <Milestone />
       <Team />
       <GalleryHzn />
