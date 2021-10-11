@@ -1,17 +1,19 @@
 import React, { useState } from "react"
-import fa from "../../assets/images/team/t2.png"
-import tl from "../../assets/images/team/t5.png"
-import mh from "../../assets/images/team/t3.png"
-import sh from "../../assets/images/team/t8.png"
-import medh from "../../assets/images/team/t1.png"
-import eh from "../../assets/images/team/t4.png"
-import soh from "../../assets/images/team/t7.png"
-import sph from "../../assets/images/team/t6.png"
-import af from "../../assets/images/team/t9.png"
+import sheena from "../../assets/images/team/Frame12.png"
+import saransh from "../../assets/images/team/Frame13.png"
+import aftab from "../../assets/images/team/Frame8.png"
+import nayan from "../../assets/images/team/Frame7.png"
+import rafi from "../../assets/images/team/Frame11.png"
+import uttkrisht from "../../assets/images/team/Frame15.png"
+import Aruna from "../../assets/images/team/Frame16.png"
+import Aishwarya from "../../assets/images/team/Frame9.png"
+import Lafin from "../../assets/images/team/Frame14.png"
+import Romal from "../../assets/images/team/Frame10.png"
+
 import team from "../../assets/images/teamWork.png"
 import "./style.css"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import { Envelope, Linkedin } from "react-bootstrap-icons"
+// import { Envelope, Linkedin } from "react-bootstrap-icons"
 import ScrollTrigger from "react-scroll-trigger"
 
 export default function Team() {
@@ -115,20 +117,20 @@ export default function Team() {
           >
             <div id={`image-container1${t1 ? "-animate" : ""}`}>
               <Image
-                src={fa}
+                src={sheena}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
               <h4>Sheena K M</h4>
               <p>Faculty Advisor | Associate Professor</p>
-              <p>
+              {/* <p>
                 <a
                   href="mailto:sheenameerankunju@gmail.com"
                   aria-label="button for emailing team member"
                 >
                   <Envelope />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
           <ScrollTrigger
@@ -138,13 +140,13 @@ export default function Team() {
           >
             <div id={`image-container2${t1 ? "-animate" : ""}`}>
               <Image
-                src={tl}
+                src={saransh}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
               <h4>Saransh Jha</h4>
               <p>Team Lead</p>
-              <p>
+              {/* <p>
                 <a
                   href="mailto:19it073sara@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -157,7 +159,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
         </div>
@@ -169,13 +171,13 @@ export default function Team() {
           >
             <div id={`image-container3${t2 ? "-animate" : ""}`}>
               <Image
-                src={af}
+                src={aftab}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
               <h4>Aftab Mehrab</h4>
-              <p>Team manager | outreach head</p>
-              <p>
+              <p>Team manager</p>
+              {/* <p>
                 <a
                   href="mailto:aftab.s@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -188,7 +190,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
           <ScrollTrigger
@@ -198,13 +200,13 @@ export default function Team() {
           >
             <div id={`image-container4${t3 ? "-animate" : ""}`}>
               <Image
-                src={mh}
+                src={nayan}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
               <h4>Nayan Jomi</h4>
               <p>Mechanical Lead</p>
-              <p>
+              {/* <p>
                 <a
                   href="mailto:18me1061naya@ug.cust.ac.in"
                   aria-label="button for emailing team member"
@@ -217,7 +219,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
         </div>
@@ -229,13 +231,13 @@ export default function Team() {
           >
             <div id={`image-container5${t4 ? "-animate" : ""}`}>
               <Image
-                src={sh}
+                src={rafi}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
-              <h4>Vasant Joseph</h4>
-              <p>Science Team Lead</p>
-              <p>
+              <h4>Rafi Rasheed</h4>
+              <p>Electronics Lead</p>
+              {/* <p>
                 <a
                   href="mailto:vasantjoseph333@gmail.com"
                   aria-label="button for emailing team member"
@@ -248,7 +250,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
           <ScrollTrigger
@@ -258,13 +260,13 @@ export default function Team() {
           >
             <div id={`image-container6${t5 ? "-animate" : ""}`}>
               <Image
-                src={soh}
+                src={uttkrisht}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
               <h4>Utkrisht Pathak</h4>
               <p>Software Lead</p>
-              <p>
+              {/* <p>
                 <a
                   href="mailto:19cs095utkr@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -277,7 +279,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
         </div>
@@ -289,13 +291,13 @@ export default function Team() {
           >
             <div id={`image-container7${t6 ? "-animate" : ""}`}>
               <Image
-                src={eh}
+                src={Aruna}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
-              <h4>Rafi Rasheed</h4>
-              <p>Electronics Lead</p>
-              <p>
+              <h4>Aruna P V</h4>
+              <p>Science Lead</p>
+              {/* <p>
                 <a
                   href="mailto:rafirasheed@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -308,7 +310,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
           <ScrollTrigger
@@ -318,13 +320,13 @@ export default function Team() {
           >
             <div id={`image-container8${t7 ? "-animate" : ""}`}>
               <Image
-                src={medh}
+                src={Aishwarya}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
-              <h4>Aman Deep</h4>
+              <h4>Aishwarya T P</h4>
               <p>Media Lead</p>
-              <p>
+              {/* <p>
                 <a
                   href="mailto:18ee012aman@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -337,7 +339,7 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
             </div>
           </ScrollTrigger>
         </div>
@@ -349,13 +351,13 @@ export default function Team() {
           >
             <div id={`image-container9${t8 ? "-animate" : ""}`}>
               <Image
-                src={sph}
+                src={Lafin}
                 alt="the freaking awesome team members"
                 id="team-img"
               />
-              <h4>Sumit Kumar Singh</h4>
-              <p>Sponsorship Head</p>
-              <p>
+              <h4>Lafin Shan</h4>
+              <p>Outreach Head</p>
+              {/* <p>
                 <a
                   href="mailto:19cs091sumi@ug.cusat.ac.in"
                   aria-label="button for emailing team member"
@@ -368,7 +370,36 @@ export default function Team() {
                 >
                   <Linkedin />
                 </a>
-              </p>
+              </p> */}
+            </div>
+          </ScrollTrigger>
+          <ScrollTrigger
+            onEnter={onEnterViewport8}
+            onExit={onExitViewport8}
+            aria-label="animation for team"
+          >
+            <div id={`image-container9${t8 ? "-animate" : ""}`}>
+              <Image
+                src={Romal}
+                alt="the freaking awesome team members"
+                id="team-img"
+              />
+              <h4>Romal Josbin</h4>
+              <p>Sponsorship Head</p>
+              {/* <p>
+                <a
+                  href="mailto:19cs091sumi@ug.cusat.ac.in"
+                  aria-label="button for emailing team member"
+                >
+                  <Envelope />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sumit-kumar-singh-aba334192/"
+                  aria-label="linked in link"
+                >
+                  <Linkedin />
+                </a>
+              </p> */}
             </div>
           </ScrollTrigger>
         </div>
