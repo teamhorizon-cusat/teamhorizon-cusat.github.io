@@ -10,15 +10,14 @@ import Footer from "../components/Footer/Footer"
 import GalleryHzn from "../components/GalleryHzn/GalleryHzn"
 
 import Head from "../components/Head/Head"
-import Rover from "../components/Rover/Final"
 
 export default function Home() {
   return (
     <div>
+      <Head />
       <NavBar />
       <Hero />
       <About />
-      {/* <Rover /> */}
       <Milestone />
       <Team />
       <GalleryHzn />

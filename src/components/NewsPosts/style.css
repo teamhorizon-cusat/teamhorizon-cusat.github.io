@@ -47,6 +47,9 @@
     width: 100%;
     margin: inherit 0;
   }
+  .card-text{
+    padding: 0 0.5rem;
+  }
   .postscroll {
     padding: 0 0;
   }

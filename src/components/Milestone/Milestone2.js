@@ -9,7 +9,11 @@ import { Container, Image } from "react-bootstrap"
 
 const Milestone2 = () => {
   const [visible, setVisible] = useState(false)
-  const [stopTimelineScroll, setScroll] = useState(false)
+  const [visiblemile1, setVisiblemile1] = useState(false)
+  const [visiblemile2, setVisiblemile2] = useState(false)
+  const [visiblemile3, setVisiblemile3] = useState(false)
+  const [visiblemile4, setVisiblemile4] = useState(false)
+  const [visiblemile5, setVisiblemile5] = useState(false)
 
   const onEnterViewport = () => {
     setVisible(true)
@@ -18,48 +22,20 @@ const Milestone2 = () => {
     setVisible(false)
   }
 
-  const handleScroll = () => {
-    const sections = document.querySelectorAll(".mile-section")
-    const timeline = document.querySelector(".mile-timeline")
-    const line = document.querySelector(".mile-line")
-    line.style.bottom = `calc(100% - 20px)`
-
-    let prevScrollY = window.scrollY
-    let set = 0
-    const targetY = window.innerHeight * 0.8
-
-    let goingup = window.scrollY < prevScrollY
-    let goingdown = !goingup
-
-    const timelineRect = timeline.getBoundingClientRect()
-
-    const dist = targetY - timelineRect.top
-
-    if (goingdown && !stopTimelineScroll) {
-      set = Math.max(set, dist)
-      line.style.bottom = `calc(100% - ${set}px)`
-    }
-
-    if (dist > timeline.offsetHeight + 50 && !stopTimelineScroll) {
-      console.log("here now")
-      setScroll(true)
-      line.style.bottom = `-50px`
-      window.removeEventListener("scroll", handleScroll)
-    }
-
-    sections.forEach(item => {
-      const rect = item.getBoundingClientRect()
-
-      if (rect.top + item.offsetHeight / 5 < targetY) {
-        item.classList.add("show-me")
-      }
-    })
-
-    prevScrollY = window.scrollY
+  const onEnterViewport1 = () => {
+    setVisiblemile1(true)
   }
-
-  const addScrollListener = () => {
-    if (!stopTimelineScroll) window.addEventListener("scroll", handleScroll)
+  const onEnterViewport2 = () => {
+    setVisiblemile2(true)
+  }
+  const onEnterViewport3 = () => {
+    setVisiblemile3(true)
+  }
+  const onEnterViewport4 = () => {
+    setVisiblemile4(true)
+  }
+  const onEnterViewport5 = () => {
+    setVisiblemile5(true)
   }
 
   return (
@@ -93,69 +69,80 @@ const Milestone2 = () => {
           </h1>
         </Container>
       </ScrollTrigger>
-      <ScrollTrigger className="mx-auto" onEnter={addScrollListener}>
+      <ScrollTrigger className="mx-auto">
         <div className="mile-container">
           <div className="mile-timeline">
             <div className="mile-line"></div>
-            <div className="mile-section">
-              <div className="bead"></div>
-              <div className="content">
-                <h4>ERC 2021 </h4>
-                <p>
-                We have secured 39th rank in the European Rover Challenge 2021.
-                </p>
+            <ScrollTrigger onEnter={onEnterViewport1} className="mile-scroll">
+              <div className={`mile-section${visiblemile1 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>ERC 2021 </h4>
+                  <p>
+                    We have secured 39th rank in the European Rover Challenge
+                    2021.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="mile-section">
-              <div className="bead"></div>
-              <div className="content">
-                <h4>Qualified URC 2020 PDR</h4>
-                <p>
-                  Made it to the top 96 teams globally in our first attempt for
-                  the University Rover Challenge organized by the ' Mars
-                  Society, United States of America '.
-                </p>
+            </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport2} className="mile-scroll">
+              <div className={`mile-section${visiblemile2 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>Qualified URC 2020 PDR</h4>
+                  <p>
+                    Made it to the top 96 teams globally in our first attempt
+                    for the University Rover Challenge organized by the ' Mars
+                    Society, United States of America '.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="mile-section">
-              <div className="bead"></div>
-              <div className="content">
-                <h4>3rd in India for ERC 2020</h4>
-                <p>
-                  With a World Rank of 32, we secured 3rd place in india and 1st
-                  in kerala! and made our way to several
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://english.mathrubhumi.com/education/articles/cusat-team-enters-round-2-of-university-rover-challenge-1.5365311"
-                  >
-                    newspaper headlies
-                  </a>
-                </p>
+            </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport3} className="mile-scroll">
+              <div className={`mile-section${visiblemile3 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>3rd in India for ERC 2020</h4>
+                  <p>
+                    With a World Rank of 32, we secured 3rd place in india and
+                    1st in kerala! and made our way to several
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://english.mathrubhumi.com/education/articles/cusat-team-enters-round-2-of-university-rover-challenge-1.5365311"
+                    >
+                      newspaper headlies
+                    </a>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="mile-section">
-              <div className="bead"></div>
-              <div className="content">
-                <h4>Subteams outperform all other teams in the world</h4>
-                <p>
-                  The Science and CAD subteam of team Horizon secured highest
-                  points in the world for SAR of URC 2021
-                </p>
+            </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport4} className="mile-scroll">
+              <div className={`mile-section${visiblemile4 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>Subteams outperform all other teams in the world</h4>
+                  <p>
+                    The Science and CAD subteam of team Horizon secured highest
+                    points in the world for SAR of URC 2021
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="mile-section">
-              <div className="bead"></div>
-              <div className="content">
-                <h4>Conducted Workshops</h4>
-                <p>
-                  We have conducted various workshops teaching industry-level
-                  skills(AutoCAD, Solidworks, Blender, Arduino, PCB Design,
-                  etc....) where over 150 students from over 15 campuses all
-                  over the country participated.
-                </p>
+            </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport5} className="mile-scroll">
+              <div className={`mile-section${visiblemile5 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>Conducted Workshops</h4>
+                  <p>
+                    We have conducted various workshops teaching industry-level
+                    skills(AutoCAD, Solidworks, Blender, Arduino, PCB Design,
+                    etc....) where over 150 students from over 15 campuses all
+                    over the country participated.
+                  </p>
+                </div>
               </div>
-            </div>
+            </ScrollTrigger>
           </div>
         </div>
       </ScrollTrigger>

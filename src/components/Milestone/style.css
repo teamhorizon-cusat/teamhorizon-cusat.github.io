@@ -45,10 +45,20 @@ body{
   text-align: justify;
 }
 
+.mile-section-animate{
+    animation: mile-fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+    display: flex;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 169px;
+}
+
 .mile-section{
     display: flex;
     opacity: 0;
-    transform: translateX(-100%);
     transition: 1400ms ease;
     position: relative;
     z-index: 1;
@@ -57,17 +67,19 @@ body{
     min-height: 275px;
 }
 
-.mile-section h4{
+
+.mile-section-animate h4{
   text-align: right;
 }
 
 
-.mile-section:nth-child(odd){
+.mile-scroll:nth-child(odd) .mile-section-animate{
     flex-direction: row-reverse;
-    transform: translateX(100%);
+    animation: mile-fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+    /* transform: translateX(100%); */
 }
 
-.mile-section:nth-child(odd) h4{
+.mile-scroll:nth-child(odd) .mile-section-animate h4{
   text-align: left;
 }
 
@@ -125,6 +137,26 @@ h1{
   @keyframes fade-in-left {
     0% {
               transform: translateX(-50px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes mile-fade-in-left {
+    0% {
+              transform: translateX(-100px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  @keyframes mile-fade-in-right {
+    0% {
+              transform: translateX(100px);
               opacity: 0;
     }
     100% {
@@ -258,16 +290,16 @@ h1{
   left: auto;
 }
 
-.mile-section{
-  flex-direction: row;
-  transform: translateX(100%);
-}
-
-.mile-section:nth-child(odd){
+.mile-section-animate{
+  animation: mile-fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
   flex-direction: row;
 }
 
-.mile-section h4{
+.mile-scroll:nth-child(odd) .mile-section-animate{
+  flex-direction: row;
+}
+
+.mile-scroll:nth-child(odd) .mile-section-animate h4{
   text-align: left;
 }
 
@@ -276,16 +308,12 @@ h1{
 }
 
 .content{
-  width: 100%;
+  width: 95%;
   margin-left: 2rem;
 }
 }
 
 @media screen and (min-width:376px) and (max-width:575px){
-
-  #hero-rocket{
-    top: -327px;
-  }
 
     #stair{
       position: absolute;
@@ -333,16 +361,17 @@ h1{
     left: auto;
   }
 
-  .mile-section{
-    flex-direction: row;
-    transform: translateX(100%);
+  .mile-section-animate{
+    animation: mile-fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+    flex-direction: row
+    /* transform: translateX(100%); */
   }
 
-  .mile-section:nth-child(odd){
+  .mile-section-animate:nth-child(odd){
     flex-direction: row;
  }
 
- .mile-section h4{
+ .mile-section-animate h4{
   text-align: left;
 }
   .bead{
@@ -350,7 +379,7 @@ h1{
   }
 
   .content{
-    width: 100%;
+    width: 95%;
     margin-left: 2rem;
   }
 }

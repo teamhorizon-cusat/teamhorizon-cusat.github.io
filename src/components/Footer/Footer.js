@@ -1,4 +1,5 @@
 import React from "react"
+import end from "../../assets/images/end.gif"
 import "./style.css"
 import { Container, Image } from "react-bootstrap"
 import {
@@ -12,7 +13,9 @@ export default function Footer() {
   return (
     <footer id="contactUs">
       <h5 id="footer-head">Team horizon</h5>
-      <Container className="text-center"></Container>
+      <Container className="text-center">
+        <Image fluid src={end} alt="end gif" id="gif" />
+      </Container>
       <p id="link">
         <a
           href="https://www.facebook.com/teamhorizoncusat/"
