@@ -25,8 +25,8 @@ export default function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Item>
-                <Link to="/#about" className="nav-link">
-                  About
+                <Link to="/News/" className="nav-link">
+                  News
                 </Link>
               </Nav.Item>
               <Nav.Item>
@@ -35,12 +35,12 @@ export default function NavBar() {
                 </Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#contactUs">Contact Us</Nav.Link>
+                <Link to="/#about" className="nav-link">
+                  About
+                </Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/News/" className="nav-link">
-                  News
-                </Link>
+                <Nav.Link href="#contactUs">Contact Us</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

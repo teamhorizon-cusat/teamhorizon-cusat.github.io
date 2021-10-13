@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { Container,Modal,CloseButton } from "react-bootstrap"
-import Avatar from "../../assets/images/avatar.svg";
-import Avatarlead from '../../assets/images/avatar-lead.svg';
+import { Container, Modal } from "react-bootstrap"
+import Avatar from "../../assets/images/avatar.svg"
+import Avatarlead from "../../assets/images/avatar-lead.svg"
 import "./style.css"
 const PastTeam = () => {
   const [show2019, setShow2019] = useState(false)
@@ -13,7 +13,7 @@ const PastTeam = () => {
   const [show2021, setShow2021] = useState(false)
   const handleClose2021 = () => setShow2021(false)
   const handleShow2021 = () => setShow2021(true)
-  const team2019=[
+  const team2019 = [
     "Rohit Sharma",
     "Abhishek Sharma",
     "Narayan Kumar",
@@ -23,7 +23,7 @@ const PastTeam = () => {
     "Sumit Kumar",
     "Saransh Jha",
     "sankalp karn",
-    "Pushkar Sharma"
+    "Pushkar Sharma",
   ]
   const team2020soft = [
     "Sritabh Priyadarshi",
@@ -165,7 +165,7 @@ const PastTeam = () => {
       <Container className="mt-5 mb-5">
         <div>
           <div className="pastteam-container">
-          <button className="pastteam-component" onClick={handleShow2019}>
+            <button className="pastteam-component" onClick={handleShow2019}>
               <div className="display-2">2019</div>
             </button>
             <button className="pastteam-component" onClick={handleShow2020}>
@@ -186,9 +186,14 @@ const PastTeam = () => {
       >
         <Modal.Header>
           <Modal.Title>2019 Team </Modal.Title>
-          <button type="button" className="btn-close" ari-lablel="Close" onClick={handleClose2019}></button>
+          <button
+            type="button"
+            className="btn-close"
+            ari-lablel="Close"
+            onClick={handleClose2019}
+          ></button>
         </Modal.Header>
-        <Modal.Body> 
+        <Modal.Body>
           <p className="pastteam-heading h3">Team Members</p>
           <div className="pastteam-list">
             {team2019.map(name => (
@@ -209,38 +214,42 @@ const PastTeam = () => {
       >
         <Modal.Header>
           <Modal.Title>2020 Team </Modal.Title>
-          <button type="button" className="btn-close" ari-lablel="Close" onClick={handleClose2020}></button>
+          <button
+            type="button"
+            className="btn-close"
+            ari-lablel="Close"
+            onClick={handleClose2020}
+          ></button>
         </Modal.Header>
         <Modal.Body>
-        <div className="pastteam-list">
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Sankalp karn <br/>(Lead)</p>
-              </div>
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Saransh Jha <br/>(Manager)</p>
-              </div>
-          </div> 
-          <p className="pastteam-heading h3">Sponsorship,Outreach & Media</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Aiswarya TP <br/>(lead)</p>
-              </div>
-            {team2020Spon.map(name => (
-              <div className="pastteam-person">
-                <img src={Avatar} alt="team avatar" />
-                <p>{name}</p>
-              </div>
-            ))}
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Sankalp karn <br />
+                (Lead)
+              </p>
+            </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Saransh Jha <br />
+                (Manager)
+              </p>
+            </div>
           </div>
           <p className="pastteam-heading h3">Electronics</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Rafi Rasheed T C <br/>(lead)</p>
-              </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Rafi Rasheed T C <br />
+                (lead)
+              </p>
+            </div>
             {team2020ele.map(name => (
               <div className="pastteam-person">
                 <img src={Avatar} alt="team avatar" />
@@ -250,43 +259,71 @@ const PastTeam = () => {
           </div>
           <p className="pastteam-heading h3">Science</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Vasant Joseph <br/>(lead)</p>
-              </div>
-          {team2020science.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
-          </div>
-        ))}
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Vasant Joseph <br />
+                (lead)
+              </p>
+            </div>
+            {team2020science.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
           <p className="pastteam-heading h3">Mechanical</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Nayan Jomi <br/>(lead)</p>
-              </div>
-          {team2020Mech.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Nayan Jomi <br />
+                (lead)
+              </p>
+            </div>
+            {team2020Mech.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        </div>
-        <p className="pastteam-heading h3">Software</p>
+          <p className="pastteam-heading h3">Software</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Utkrisht pathak <br/>(lead)</p>
-              </div>
-          {team2020soft.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Utkrisht pathak <br />
+                (lead)
+              </p>
+            </div>
+            {team2020soft.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        </div>
+          <p className="pastteam-heading h3">Sponsorship,Outreach & Media</p>
+          <div className="pastteam-list">
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                Aiswarya TP <br />
+                (lead)
+              </p>
+            </div>
+            {team2020Spon.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
+          </div>
         </Modal.Body>
       </Modal>
 
@@ -299,46 +336,43 @@ const PastTeam = () => {
       >
         <Modal.Header>
           <Modal.Title>2021 Team </Modal.Title>
-          <button type="button" className="btn-close" ari-lablel="Close" onClick={handleClose2021}></button>
+          <button
+            type="button"
+            className="btn-close"
+            ari-lablel="Close"
+            onClick={handleClose2021}
+          ></button>
         </Modal.Header>
         <Modal.Body>
-        <div className="pastteam-list">
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Saransh Jha <br/>(Lead)</p>
-              </div>
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Aftab S <br/>(Manager)</p>
-              </div>
-          </div> 
-          <p className="pastteam-heading h3">Sponsorship,Outreach & Media</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Romal Jsobin <br/>(SP lead)</p>
-              </div>
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Lafin Shan <br/>(OR lead)</p>
-              </div>
-              <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Aiswarya TP <br/>(ME lead)</p>
-              </div>
-            {team2021Spon.map(name => (
-              <div className="pastteam-person">
-                <img src={Avatar} alt="team avatar" />
-                <p>{name}</p>
-              </div>
-            ))}
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Saransh Jha <br />
+                (Lead)
+              </p>
+            </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Aftab S <br />
+                (Manager)
+              </p>
+            </div>
           </div>
+
           <p className="pastteam-heading h3">Electronics</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Rafi Rasheed <br/>(lead)</p>
-              </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Rafi Rasheed <br />
+                (lead)
+              </p>
+            </div>
             {team2021ele.map(name => (
               <div className="pastteam-person">
                 <img src={Avatar} alt="team avatar" />
@@ -348,43 +382,88 @@ const PastTeam = () => {
           </div>
           <p className="pastteam-heading h3">Science</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Aruna P V <br/>(lead)</p>
-              </div>
-          {team2021science.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
-          </div>
-        ))}
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Aruna P V <br />
+                (lead)
+              </p>
+            </div>
+            {team2021science.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
           <p className="pastteam-heading h3">Mechanical</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Nayan Jomi  <br/>(lead)</p>
-              </div>
-          {team2021Mech.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Nayan Jomi <br />
+                (lead)
+              </p>
+            </div>
+            {team2021Mech.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        </div>
-        <p className="pastteam-heading h3">Software</p>
+          <p className="pastteam-heading h3">Software</p>
           <div className="pastteam-list">
-          <div className="pastteam-person">
-                <img src={Avatarlead} alt="team avatar" />
-                <p> Utkrisht pathak <br/>(lead)</p>
-              </div>
-          {team2021soft.map(name => (
             <div className="pastteam-person">
-            <img src={Avatar} alt="team avatar" />
-            <p>{name}</p>
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Utkrisht pathak <br />
+                (lead)
+              </p>
+            </div>
+            {team2021soft.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        </div>
+          <p className="pastteam-heading h3">Sponsorship,Outreach & Media</p>
+          <div className="pastteam-list">
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Romal Jsobin <br />
+                (SP lead)
+              </p>
+            </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Lafin Shan <br />
+                (OR lead)
+              </p>
+            </div>
+            <div className="pastteam-person">
+              <img src={Avatarlead} alt="team avatar" />
+              <p>
+                {" "}
+                Aiswarya TP <br />
+                (ME lead)
+              </p>
+            </div>
+            {team2021Spon.map(name => (
+              <div className="pastteam-person">
+                <img src={Avatar} alt="team avatar" />
+                <p>{name}</p>
+              </div>
+            ))}
+          </div>
         </Modal.Body>
       </Modal>
     </div>

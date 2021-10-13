@@ -2,9 +2,12 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-.canvasthree{
-    min-height:700px;
-}
-canvas{
-    height: 500px;
+
+
+.team-header {
+    text-align: center;
+    font-size: 56px;
+    color: #db1d4b;
+    font-weight: bold;
+    margin-top: 3rem;
 }
