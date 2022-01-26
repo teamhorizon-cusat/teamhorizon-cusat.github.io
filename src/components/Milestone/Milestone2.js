@@ -14,6 +14,7 @@ const Milestone2 = () => {
   const [visiblemile3, setVisiblemile3] = useState(false)
   const [visiblemile4, setVisiblemile4] = useState(false)
   const [visiblemile5, setVisiblemile5] = useState(false)
+  const [visiblemile6, setVisiblemile6] = useState(false)
 
   const onEnterViewport = () => {
     setVisible(true)
@@ -36,6 +37,9 @@ const Milestone2 = () => {
   }
   const onEnterViewport5 = () => {
     setVisiblemile5(true)
+  }
+  const onEnterViewport6 = () => {
+    setVisiblemile6(true)
   }
 
   return (
@@ -73,18 +77,6 @@ const Milestone2 = () => {
         <div className="mile-container">
           <div className="mile-timeline">
             <div className="mile-line"></div>
-            <ScrollTrigger onEnter={onEnterViewport1} className="mile-scroll">
-              <div className={`mile-section${visiblemile1 ? "-animate" : ""}`}>
-                <div className="bead"></div>
-                <div className="content">
-                  <h4>ERC 2021 </h4>
-                  <p>
-                    We have secured 39th rank in the European Rover Challenge
-                    2021.
-                  </p>
-                </div>
-              </div>
-            </ScrollTrigger>
             <ScrollTrigger onEnter={onEnterViewport2} className="mile-scroll">
               <div className={`mile-section${visiblemile2 ? "-animate" : ""}`}>
                 <div className="bead"></div>
@@ -117,6 +109,18 @@ const Milestone2 = () => {
                 </div>
               </div>
             </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport1} className="mile-scroll">
+              <div className={`mile-section${visiblemile1 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>ERC 2021 </h4>
+                  <p>
+                    We have secured 39th rank in the European Rover Challenge
+                    2021.
+                  </p>
+                </div>
+              </div>
+            </ScrollTrigger>
             <ScrollTrigger onEnter={onEnterViewport4} className="mile-scroll">
               <div className={`mile-section${visiblemile4 ? "-animate" : ""}`}>
                 <div className="bead"></div>
@@ -139,6 +143,19 @@ const Milestone2 = () => {
                     skills(AutoCAD, Solidworks, Blender, Arduino, PCB Design,
                     etc....) where over 150 students from over 15 campuses all
                     over the country participated.
+                  </p>
+                </div>
+              </div>
+            </ScrollTrigger>
+            <ScrollTrigger onEnter={onEnterViewport6} className="mile-scroll">
+              <div className={`mile-section${visiblemile6 ? "-animate" : ""}`}>
+                <div className="bead"></div>
+                <div className="content">
+                  <h4>Qualified URC 2022 PDR</h4>
+                  <p>
+                    Successfully qualified the Preliminary Design Review of
+                    University Rover Challenge. The team has cleared PDR for
+                    three consecutive years ( 2020, 2021, 2022).
                   </p>
                 </div>
               </div>
